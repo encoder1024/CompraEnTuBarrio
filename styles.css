@@ -62,9 +62,11 @@
 
 .encabezado__titulo {
     margin: 0 auto;
+    background-color: rgb(255, 255, 255, .7);
+    border-radius: 7px;
     width: fit-content;
     text-align: center;
-    transform: translateY(-10px);
+    transform: translateY(30px);
     z-index: 100000;
 }
 
@@ -515,6 +517,11 @@
     .displayOnOff{
         display: none;
     }
+
+    .encabezado__titulo{
+        transform: translateY(-10px);
+/*         background-color: transparent; */
+    }
 }
 
 
@@ -527,6 +534,10 @@
             'aside aside aside aside'
             'footer footer footer footer'
         ;
+    }
+
+    .encabezado__titulo{
+        transform: translateY(5px);
     }
 
     .mainMenu {
