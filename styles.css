@@ -512,6 +512,9 @@
         color: white;
     } */
 
+    .displayOnOff{
+        display: none;
+    }
 }
 
 
