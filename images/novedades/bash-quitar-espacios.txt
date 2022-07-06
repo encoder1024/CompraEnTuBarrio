@@ -1,0 +1,1 @@
+Get-ChildItem -Filter "*Whatsapp*" -Recurse | Rename-Item -NewName {$_.name -replace " ","_" }

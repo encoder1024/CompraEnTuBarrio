@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../styles.css">
+    <title>CompraEnTuBarrio | busqueda</title>
+</head>
+
+<body>
+    <header class="encabezado">
+        <nav>
+            <ul class="encabezado__menu">
+                <li class="encabezado__menu__item"><a href="../index.html">inicio</a></li>
+                <li class="encabezado__menu__item"><a href="./map.html">mapa</a></li>
+                <li class="encabezado__menu__item"><a href="#">busqueda</a></li>
+                <li class="encabezado__menu__item itemSubmenu">
+                    <a href="./profile.html">cuenta</a>
+                    <ul class="encabezado__lista__submenu">
+                        <li class="bodymain__acciones__lista"><a class="bodymain__acciones__lista__item">Publicar</a></li>
+                        <li class="bodymain__acciones__lista"><a class="bodymain__acciones__lista__item">info</a></li>
+                        <li class="bodymain__acciones__lista"><a class="bodymain__acciones__lista__item">Favoritos</a></li>
+                    </ul>
+                </li>
+                <li class="encabezado__menu__item"><a href="./who-we-are.html">nosotros</a></li>
+            </ul>
+        </nav>
+        <h1 class="encabezado__titulo">Compra en tu barrio a emprendedores vecinos</h1>
+    </header>
+    <main class="bodymain">
+        <section class="bodymain__buscar">
+            <form>
+                <div>
+                    <input type="search" placeholder="Que estás buscando?" class="bodymain__buscar__input__mapa">
+                    <!-- Agregar texto Que estás buscando? -->
+                </div>
+                <div class="bodymain__buscar__position">
+                    <img src="../images/icon-ubication-min.png" alt="icono de tu ubicación actual">
+                    <label for="ubicacion">Tu ubicación actual es en la zona de...</label>
+                </div>
+            </form>
+        </section>
+        <section class="bodymain__novedades">
+            <h2>Resultados de tu busqueda:</h2>
+            <div class="tablanovedades">
+                <table class="tablanovedades__tabla">
+                    <!-- se verán en cards las últimas publicaciones por orden de llegada LIFO , en una matriz de 3x4-->
+                    <tr>
+                        <td>
+                            <div class="novedades">
+                                <img src="../images/marketing.webp" alt="Publicación 1" width="200" height="100">
+                                <p>Publicación 1</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="novedades">
+                                <img src="../images/marketing.webp" alt="Publicación 2" width="200" height="100">
+                                <p>Publicación 2</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="novedades">
+                                <img src="../images/marketing.webp" alt="Publicación 3" width="200" height="100">
+                                <p>Publicación 3</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="novedades">
+                                <img src="../images/marketing.webp" alt="Publicación 4" width="200" height="100">
+                                <p>Publicación 4</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="novedades">
+                                <img src="../images/marketing.webp" alt="Publicación 5" width="200" height="100">
+                                <p>Publicación 5</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="novedades">
+                                <img src="../images/marketing.webp" alt="Publicación 6" width="200" height="100">
+                                <p>Publicación 6</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="novedades">
+                                <img src="../images/marketing.webp" alt="Publicación 7" width="200" height="100">
+                                <p>Publicación 7</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="novedades">
+                                <img src="../images/marketing.webp" alt="Publicación 8" width="200" height="100">
+                                <p>Publicación 8</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!--                     <tr>
+                        <td>
+                            <div class="novedades">
+                                <img src="../images/marketing.webp" alt="Publicación 9" width="200" height="100">
+                                <p>Publicación 9</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="novedades">
+                                <img src="../images/marketing.webp" alt="Publicación 10" width="200" height="100">
+                                <p>Publicación 10</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="novedades">
+                                <img src="../images/marketing.webp" alt="Publicación 11" width="200" height="100">
+                                <p>Publicación 11</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="novedades">
+                                <img src="../images/marketing.webp" alt="Publicación 12" width="200" height="100">
+                                <p>Publicación 12</p>
+                            </div>
+                        </td>
+                    </tr> -->
+                </table>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footerpage">
+        <ul class="footerpage__redes">
+            <li class="footerpage__redes__item">
+                <a href="https://www.twitter.com/miperfil" target="_blank">
+                    <img src="../images/twitter.png" alt="red social Twitter" width="48" height="48">
+                </a>
+            </li>
+            <li class="footerpage__redes__item">
+                <a href="https://www.facebook.com/miperfil" target="_blank">
+                    <img src="../images/facebook.png" alt="red social Facebook" width="48" height="48">
+                </a>
+            </li>
+            <li class="footerpage__redes__item">
+                <a href="https://www.instagram.com/miperfil" target="_blank">
+                    <img src="../images/instagram.png" alt="red social Instagram" width="48" height="48">
+                </a>
+            </li>
+            <li class="footerpage__redes__item">
+                <a href='https://cafecito.app/compraentubarrio' rel='noopener' target='_blank'>
+                    <img srcset='https://cdn.cafecito.app/imgs/buttons/button_6.png 1x, 
+                        https://cdn.cafecito.app/imgs/buttons/button_6_2x.png 2x, 
+                        https://cdn.cafecito.app/imgs/buttons/button_6_3.75x.png 3.75x'
+                        src='https://cdn.cafecito.app/imgs/buttons/button_6.png'
+                        alt='Invitame un café en cafecito.app' /><!-- ojo -->
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

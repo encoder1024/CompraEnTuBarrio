@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../styles.css">
+    <title>CompraEnTuBarrio | nosotros</title>
+</head>
+
+<body>
+    <header class="encabezado">
+        <nav>
+            <ul class="encabezado__menu">
+                <li class="encabezado__menu__item"><a href="../index.html">inicio</a></li>
+                <li class="encabezado__menu__item"><a href="./map.html">mapa</a></li>
+                <li class="encabezado__menu__item"><a href="./search.html">busqueda</a></li>
+                <li class="encabezado__menu__item itemSubmenu">
+                    <a href="./profile.html">cuenta</a>
+                    <ul class="encabezado__lista__submenu">
+                        <li class="bodymain__acciones__lista"><a class="bodymain__acciones__lista__item">Publicar</a></li>
+                        <li class="bodymain__acciones__lista"><a class="bodymain__acciones__lista__item">info</a></li>
+                        <li class="bodymain__acciones__lista"><a class="bodymain__acciones__lista__item">Favoritos</a></li>
+                    </ul>
+                </li>
+                <li class="encabezado__menu__item"><a href="#">nosotros</a></li>
+            </ul>
+        </nav>
+        <h1 class="encabezado__titulo">Compra en tu barrio a emprendedores vecinos</h1>
+    </header>
+    <main class="bodymain">
+        <section class="bodymain__somos">
+            <!-- presentación del proyecto y el equipo, sponsors, etc... -->
+            <h2>Somos emprendedores vecinos</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et iure non necess
+                itatibus ut repudiandae laborum molestiae. Adipisci quae rerum quos corpori
+                s dolores hic eligendi assumenda iusto, exercitationem harum obcaecati, exp
+                licabo aliquam at? Cumque laudantium soluta, in nulla tempora dolorem quos
+                molestiae reprehenderit tenetur, alias deleniti nisi obcaecatiexpedita even
+                iet suscipit!</p>
+            <h2>Nuestra historia</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et iure non necess
+                itatibus ut repudiandae laborum molestiae. Adipisci quae rerum quos corpori
+                s dolores hic eligendi assumenda iusto, exercitationem harum obcaecati, exp
+                licabo aliquam at? Cumque laudantium soluta, in nulla tempora dolorem quos
+                molestiae reprehenderit tenetur, alias deleniti nisi obcaecatiexpedita even
+                iet suscipit!</p>
+        </section>
+        <section>
+            <!-- Envianos tu mensaje / Contacto -->
+            <h2 class="centrado">Contacto</h2>
+            <div class="contact_form">
+                <div class="formulario">
+                    <h3 class="centrado">Escríbenos y en breve nos pondremos en contacto contigo</h3>
+                    <form class="bodymain__novedades__form__registro">
+                        <!-- action="submeter-formulario.php" method="post" -->
+                        <p>
+                            <input type="text" name="introducir_nombre" class="input" id="nombre" required="obligatorio"
+                                placeholder="Escribe tu nombre">
+                            <label for="nombre" class="colocar_nombre">Nombre
+                                <span class="obligatorio">*</span>
+                            </label>
+                        </p>
+                        <p>
+                            <input type="email" name="introducir_email" class="input" id="email" required="obligatorio"
+                                placeholder="Escribe tu Email">
+                            <label for="email" class="colocar_email">Email
+                                <span class="obligatorio">*</span>
+                            </label>
+                        </p>
+                        <p>
+                            <input type="tel" name="introducir_telefono" class="input" id="telefono"
+                                placeholder="Escribe tu teléfono">
+                            <label for="telefone" class="colocar_telefono">Teléfono
+                            </label>
+                        </p>
+                        <p>
+                            <input type="url" name="introducir_website" class="input" id="website"
+                                placeholder="Escribe la URL de tu web">
+                            <label for="website" class="colocar_website">Sitio web
+                            </label>
+                        </p>
+                        <p>
+                            <input type="text" name="introducir_asunto" class="input" id="assunto" required="obligatorio"
+                                placeholder="Escribe un asunto">
+                            <label for="asunto" class="colocar_asunto">Asunto
+                                <span class="obligatorio">*</span>
+                            </label>
+                        </p>
+                        <p>
+                            <textarea name="introducir_mensaje" class="texto__mensaje input" id="mensaje"
+                                required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                            <label for="mensaje" class="colocar_mensaje">Mensaje
+                                <span class="obligatorio">*</span>
+                            </label>
+                        </p>
+                        <button type="submit" name="enviar_formulario" class="submitBtn" id="enviar">
+                            <p>Enviar</p>
+                        </button>
+                        <p class="aviso">
+                            <span class="obligatorio"> * </span>los campos son obligatorios.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footerpage">
+        <ul class="footerpage__redes">
+            <li class="footerpage__redes__item">
+                <a href="https://www.twitter.com/miperfil" target="_blank">
+                    <img src="../images/twitter.png" alt="red social Twitter" width="48" height="48">
+                </a>
+            </li>
+            <li class="footerpage__redes__item">
+                <a href="https://www.facebook.com/miperfil" target="_blank">
+                    <img src="../images/facebook.png" alt="red social Facebook" width="48" height="48">
+                </a>
+            </li>
+            <li class="footerpage__redes__item">
+                <a href="https://www.instagram.com/miperfil" target="_blank">
+                    <img src="../images/instagram.png" alt="red social Instagram" width="48" height="48">
+                </a>
+            </li>
+            <li class="footerpage__redes__item">
+                <a href='https://cafecito.app/compraentubarrio' rel='noopener' target='_blank'>
+                    <img srcset='https://cdn.cafecito.app/imgs/buttons/button_6.png 1x, 
+                        https://cdn.cafecito.app/imgs/buttons/button_6_2x.png 2x, 
+                        https://cdn.cafecito.app/imgs/buttons/button_6_3.75x.png 3.75x'
+                        src='https://cdn.cafecito.app/imgs/buttons/button_6.png'
+                        alt='Invitame un café en cafecito.app' /><!-- ojo -->
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

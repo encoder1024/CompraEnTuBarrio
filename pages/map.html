@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../styles.css">
+    <title>CompraEnTuBarrio | mapa</title>
+</head>
+
+<body class="layout__mapa">
+    <header class="encabezado layout__mapa__header">
+        <nav>
+            <ul class="encabezado__menu">
+                <li class="encabezado__menu__item"><a href="../index.html">inicio</a></li>
+                <li class="encabezado__menu__item"><a href="#">mapa</a></li>
+                <li class="encabezado__menu__item"><a href="./search.html">busqueda</a></li>
+                <li class="encabezado__menu__item itemSubmenu">
+                    <a href="./profile.html">cuenta</a>
+                    <ul class="encabezado__lista__submenu">
+                        <li class="bodymain__acciones__lista"><a class="bodymain__acciones__lista__item">Publicar</a></li>
+                        <li class="bodymain__acciones__lista"><a class="bodymain__acciones__lista__item">info</a></li>
+                        <li class="bodymain__acciones__lista"><a class="bodymain__acciones__lista__item">Favoritos</a></li>
+                    </ul>
+                </li>
+                <li class="encabezado__menu__item"><a href="./who-we-are.html">nosotros</a></li>
+            </ul>
+        </nav>
+        <h1 class="encabezado__titulo">Compra en tu barrio a emprendedores vecinos</h1>
+    </header>
+    <main class="bodymain layout__mapa__main">
+        <section class="bodymain__mapa__buscar">
+            <div>
+                <input type="search" placeholder="Donde estás buscando?" class="bodymain__buscar__input__mapa">
+            </div>
+            <div class="bodymain__buscar__position">
+                <img src="../images/icon-ubication-min.png" alt="icono de tu ubicación actual">
+                <label for="ubicacion">Tu ubicación actual es en la zona de...</label>
+            </div>
+            <!-- dentro de una ul o una ol se puede usar esto para simplificar la generación de links li*3>a -->
+        </section>
+        <section class="bodymain__mapa">
+            <!-- mapa centrado en la ubicación actual y luego se mueve a DONDE busque el usuario-->
+            <div class="bodymain__mapa__source">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.715524370883!2d
+                    -58.43227259999999!3d-34.586064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b
+                    cc945173b3dd7%3A0xe8a347bb55df550c!2sCoderhouse%20Argentina!5e0!3m2!1ses-419!2sar!4v165
+                    4742548709!5m2!1ses-419!2sar" style="border:0;" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="bodymain__mapa__source__iframe">
+                </iframe>
+            </div>
+
+        </section>
+    </main>
+    <aside class="layout__mapa__aside">
+        <!-- lista acordion de las actividades para filtrar el mapa -->
+        <!-- será la lita acordion que contine las actividades, servicios y productos de los emprendedores -->
+        <!-- a futuro esta lista se construye leyendo de la base de datos las actividades registradas -->
+        <div class="wrapper">
+            <ul class="mainMenu">
+                <li class="item" id="ropabebe">
+                    <a href="#ropabebe" class="btn"><i class="fas fa-user-circle"></i>Ropa de Bebé</a>
+                    <div class="subMenu">
+                        <a href="../pages/to-do-page.html">Capullitos</a>
+                        <a href="../pages/to-do-page.html">Ropita's</a>
+                        <a href="../pages/to-do-page.html">Mimosos</a>
+                    </div>
+                </li>
+                <li class="item" id="carniceria">
+                    <a href="#carniceria" class="btn"><i class="fas fa-address-card"></i>Carnicerías</a>
+                    <div class="subMenu">
+                        <a href="../pages/to-do-page.html">Carnicería Julio</a>
+                        <a href="../pages/to-do-page.html">Carnicería La república de la Carne</a>
+                        <a href="../pages/to-do-page.html">Carnicería Los Tres Hermanos</a>
+                    </div>
+                </li>
+                <li class="item" id="dulcescaseros">
+                    <a href="#dulcescaseros" class="btn"><i class="fas fa-address-card"></i>Dulces caseros</a>
+                    <div class="subMenu">
+                        <a href="../pages/to-do-page.html">Dulces de casa</a>
+                        <a href="../pages/to-do-page.html">Sabores caceros</a>
+                        <a href="../pages/to-do-page.html">Dulces de montaña</a>
+                    </div>
+                </li>
+                <li class="item" id="verdulerias">
+                    <a href="#verdulerias" class="btn"><i class="fas fa-address-card"></i>Frutas y verduras</a>
+                    <div class="subMenu">
+                        <a href="../pages/to-do-page.html">Distribución de frutas José</a>
+                        <a href="../pages/to-do-page.html">Verdulería Jazmín</a>
+                        <a href="../pages/to-do-page.html">Directo de la huerta</a>
+                    </div>
+                </li>
+                <li class="item" id="servicepc">
+                    <a href="#servicepc" class="btn"><i class="fas fa-address-card"></i>Service de PC</a>
+                    <div class="subMenu">
+                        <a href="../pages/to-do-page.html">Reparatodo</a>
+                        <a href="../pages/to-do-page.html">Técnico de PC</a>
+                        <a href="../pages/to-do-page.html">Pepe rompé!</a>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#" class="btn"><i class="fas fa-sign-out-alt"></i>Borrar filtro</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <footer class="footerpage layout__mapa__footer">
+        <ul class="footerpage__redes">
+            <li class="footerpage__redes__item">
+                <a href="https://www.twitter.com/miperfil" target="_blank">
+                    <img src="../images/twitter.png" alt="red social Twitter" width="48" height="48">
+                </a>
+            </li>
+            <li class="footerpage__redes__item">
+                <a href="https://www.facebook.com/miperfil" target="_blank">
+                    <img src="../images/facebook.png" alt="red social Facebook" width="48" height="48">
+                </a>
+            </li>
+            <li class="footerpage__redes__item">
+                <a href="https://www.instagram.com/miperfil" target="_blank">
+                    <img src="../images/instagram.png" alt="red social Instagram" width="48" height="48">
+                </a>
+            </li>
+            <li class="footerpage__redes__item">
+                <a href='https://cafecito.app/compraentubarrio' rel='noopener' target='_blank'>
+                    <img srcset='https://cdn.cafecito.app/imgs/buttons/button_6.png 1x, 
+                        https://cdn.cafecito.app/imgs/buttons/button_6_2x.png 2x, 
+                        https://cdn.cafecito.app/imgs/buttons/button_6_3.75x.png 3.75x'
+                        src='https://cdn.cafecito.app/imgs/buttons/button_6.png'
+                        alt='Invitame un café en cafecito.app' /><!-- ojo -->
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

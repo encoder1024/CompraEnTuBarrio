@@ -1,26 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./styles.css">
+    <title>CompraEnTuBarrio | inicio</title>
 </head>
-<body>
-    <h1>
-        Hola
-    </h1>
-    <div>
-        <p>
-            Otra Rama 
-        </p>
-    </div>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi iste, vero suscipit repellat consectetur quod optio, molestiae id dolores, corrupti dolore! Esse est quidem error neque veritatis voluptates soluta molestiae!
-    Perferendis, a odio facere officia earum cumque reiciendis nam magni atque unde quo iure eum ut tenetur sed magnam animi dolorum vitae pariatur impedit, aut enim voluptatum porro? Quae, amet!
-    Repellat veritatis quibusdam non eveniet deserunt, tenetur excepturi quas ratione repudiandae placeat obcaecati quis minima, eaque quo possimus perferendis! Vel eligendi rerum officia fuga vero illum, odio accusantium perspiciatis eveniet.
-    Perferendis adipisci voluptates saepe in? Alias obcaecati eligendi dignissimos quibusdam commodi rerum ex! Ea, ex id modi earum nesciunt suscipit aspernatur exercitationem in facere cum fugit, molestias ullam. Iure, aliquam.
-    Unde praesentium quis libero aliquid atque aspernatur accusamus, quam ullam voluptatibus necessitatibus esse. Doloribus minima tempore corporis nemo mollitia, quibusdam iusto corrupti, inventore ipsam, nulla rem. Asperiores sit vitae cupiditate!</p>
-    
+
+<body class="layout">
+    <header class="encabezado layout__header">
+        <nav>
+            <ul class="encabezado__menu">
+                <li class="encabezado__menu__item"><a href="#">inicio</a></li>
+                <li class="encabezado__menu__item"><a href="./pages/map.html">mapa</a></li>
+                <li class="encabezado__menu__item"><a href="./pages/search.html">busqueda</a></li>
+                <li class="encabezado__menu__item itemSubmenu">
+                    <a href="./pages/profile.html">cuenta</a>
+                    <ul class="encabezado__lista__submenu">
+                        <li class="bodymain__acciones__lista"><a class="bodymain__acciones__lista__item">Publicar</a></li>
+                        <li class="bodymain__acciones__lista"><a class="bodymain__acciones__lista__item">info</a></li>
+                        <li class="bodymain__acciones__lista"><a class="bodymain__acciones__lista__item">Favoritos</a></li>
+                    </ul>
+                </li>
+                <li class="encabezado__menu__item"><a href="./pages/who-we-are.html">nosotros</a></li>
+            </ul>
+        </nav>
+        <h1 class="encabezado__titulo">Compra en tu barrio a emprendedores vecinos</h1>
+        <div class="bird"></div>
+    </header>
+    <main class="bodymain layout__main">
+        <section class="bodymain__buscar">
+            <div>
+                <input type="text" placeholder="Que estás buscando?" class="bodymain__buscar__input">
+<!--                 <a href="./pages/search.html"><button class="bodymain__buscar__boton">Buscar</button></a> -->
+            </div>
+            <div class="bodymain__buscar__position">
+                <img src="./images/icon-ubication-min.png" alt="icono de tu ubicación actual">
+                <label for="ubicacion">Tu ubicación actual es en la zona de...</label>
+            </div>
+        </section>
+        <section class="bodymain__novedades">
+            <h2>Las últimas novedades del barrio:</h2>
+            <div class="tablanovedades">
+                <div class="tablanovedades__fila fila01">
+                    <div class="grilla__item item01">
+                        <img src="./images/novedades/WhatsApp_Image_2022-07-02_at_2.04.08_PM.jpeg" alt="campera">
+                    </div>
+                    <div class="grilla__item item02">
+                        <img src="./images/novedades/WhatsApp_Image_2022-07-02_at_12.11.56_PM.jpeg" alt="mochila solidaria">
+                    </div>
+                    <div class="grilla__item item03">
+                        <img src="./images/novedades/WhatsApp_Image_2022-07-02_at_12.38.50_PM.jpeg" alt="promo relax">
+
+                    </div>
+                    <div class="grilla__item item04">
+                        <img src="./images/novedades/WhatsApp_Image_2022-07-02_at_12.48.47_PM.jpeg" alt="vacaciones de invierno">
+                    </div>
+                    <div class="grilla__item item05">
+                        <img src="./images/novedades/WhatsApp_Image_2022-07-03_at_1.06.27_PM.jpeg" alt="torta helada">
+                    </div>
+                    <div class="grilla__item item06">
+                        <img src="./images/novedades/WhatsApp_Image_2022-07-03_at_3.58.13_PM.jpeg" alt="pendulo hebreo">
+
+                    </div>
+                </div>
+                <div class="tablanovedades__fila fila02">
+                    <div class="grilla__item item07">
+                        <img src="./images/novedades/WhatsApp_Image_2022-07-03_at_4.02.47_PM.jpeg" alt="electricista">
+                    </div>
+                    <div class="grilla__item item08">
+                        <img src="./images/novedades/WhatsApp_Image_2022-07-03_at_8.18.02_PM.jpeg" alt="microblading">
+                    </div>
+                    <div class="grilla__item item09">
+                        <img src="./images/novedades/WhatsApp_Image_2022-07-04_at_9.32.24_AM.jpeg" alt="peluqueria canina">
+                    </div>
+                    <div class="grilla__item item10">
+                        <img src="./images/novedades/WhatsApp_Image_2022-07-04_at_10.12.18_AM.jpeg" alt="maquina de pastas">
+                    </div>
+                    <div class="grilla__item item11">
+                        <img src="./images/novedades/WhatsApp_Image_2022-07-04_at_10.23.25_AM.jpeg" alt="haburguesas">
+                    </div>
+                    <div class="grilla__item item12">
+                        <img src="./images/novedades/WhatsApp_Image_2022-07-04_at_11.53.16_AM.jpeg" alt="departamento en venta">
+                    </div>
+                </div>
+                <div class="tablanovedades__fila fila03">
+                    <div class="grilla__item item13">
+                        <img src="./images/novedades/WhatsApp_Image_2022-07-02_at_10.36.19_AM.jpeg" alt="electricista">
+                    </div>
+                    <div class="grilla__item item14">
+                        <img src="./images/novedades/WhatsApp_Image_2022-07-02_at_10.53.24_AM.jpeg" alt="microblading">
+                    </div>
+                    <div class="grilla__item item15">
+                        <img src="./images/novedades/WhatsApp_Image_2022-07-02_at_12.07.59_PM.jpeg" alt="peluqueria canina">
+                    </div>
+                    <div class="grilla__item item16">
+                        <img src="./images/novedades/WhatsApp_Image_2022-07-02_at_12.11.05_PM.jpeg" alt="maquina de pastas">
+                    </div>
+                    <div class="grilla__item item17">
+                        <img src="./images/novedades/WhatsApp_Image_2022-07-02_at_12.11.56_PM.jpeg" alt="haburguesas">
+                    </div>
+                    <div class="grilla__item item18">
+                        <img src="./images/novedades/WhatsApp_Image_2022-07-02_at_12.38.50_PM.jpeg" alt="departamento en venta">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footerpage layout__footer">
+        <ul class="footerpage__redes">
+            <li class="footerpage__redes__item">
+                <a href="https://www.twitter.com/miperfil" target="_blank">
+                    <img src="./images/twitter.png" alt="red social Twitter" width="48" height="48">
+                </a>
+            </li>
+            <li class="footerpage__redes__item">
+                <a href="https://www.facebook.com/miperfil" target="_blank">
+                    <img src="./images/facebook.png" alt="red social Facebook" width="48" height="48">
+                </a>
+            </li>
+            <li class="footerpage__redes__item">
+                <a href="https://www.instagram.com/miperfil" target="_blank">
+                    <img src="./images/instagram.png" alt="red social Instagram" width="48" height="48">
+                </a>
+            </li>
+            <li class="footerpage__redes__item">
+                <a href='https://cafecito.app/compraentubarrio' rel='noopener' target='_blank'>
+                    <img srcset='https://cdn.cafecito.app/imgs/buttons/button_6.png 1x, 
+                        https://cdn.cafecito.app/imgs/buttons/button_6_2x.png 2x, 
+                        https://cdn.cafecito.app/imgs/buttons/button_6_3.75x.png 3.75x'
+                        src='https://cdn.cafecito.app/imgs/buttons/button_6.png'
+                        alt='Invitame un café en cafecito.app' /><!-- ojo -->
+                </a>
+            </li>
+        </ul>
+    </footer>
 </body>
+
 </html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../styles.css">
+    <title>CompraEnTuBarrio | cuenta</title>
+</head>
+
+<body>
+    <header class="encabezado">
+        <nav>
+            <ul class="encabezado__menu">
+                <li class="encabezado__menu__item"><a href="../index.html">inicio</a></li>
+                <li class="encabezado__menu__item"><a href="./map.html">mapa</a></li>
+                <li class="encabezado__menu__item"><a href="./search.html">busqueda</a></li>
+                <li class="encabezado__menu__item itemSubmenu">
+                    <a href="#">cuenta</a>
+                    <ul class="encabezado__lista__submenu">
+                        <li class="bodymain__acciones__lista"><a class="bodymain__acciones__lista__item">Publicar</a></li>
+                        <li class="bodymain__acciones__lista"><a class="bodymain__acciones__lista__item">info</a></li>
+                        <li class="bodymain__acciones__lista"><a class="bodymain__acciones__lista__item">Favoritos</a></li>
+                    </ul>
+                </li>
+                <li class="encabezado__menu__item"><a href="./who-we-are.html">nosotros</a></li>
+            </ul>
+        </nav>
+        <h1 class="encabezado__titulo">Compra en tu barrio a emprendedores vecinos</h1>
+    </header>
+    <main class="bodymain">
+        <section class="bodymain__acciones">
+            <div>
+                <ul>
+                    <li class="bodymain__acciones__lista"><a href="./to-do-page.html"
+                            class="bodymain__acciones__lista__item">Publica tu actividad, campaña, servicio o
+                            producto</a></li>
+                    <li class="bodymain__acciones__lista"><a href="./to-do-page.html"
+                            class="bodymain__acciones__lista__item">Publica tu necesidad de un servicio o producto</a>
+                    </li>
+                    <li class="bodymain__acciones__lista"><a href="./to-do-page.html"
+                            class="bodymain__acciones__lista__item">Sugiere un emprendedor que conozcas</a></li>
+                    <li class="bodymain__acciones__lista"><a href="./to-do-page.html"
+                            class="bodymain__acciones__lista__item">Tus favoritos</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="bodymain__novedades">
+            <h2>Ingresar los datos de tu cuenta:</h2>
+            <form class="bodymain__novedades__form__registro">
+                <!-- action="user-registro-login-update.php" para dar funcionalidad al formulario -->
+                <!-- este formulario dependerá si está registrado o no y si ya está también logueado en su cuenta -->
+                <!-- en este caso, supongo que se va a registrar un nuevo usuario, por lo que el formulario
+                pedirá la información actual y permitirá registrar -->
+                <div class="inputContainer">
+                    <input type="email" class="input" placeholder="ingresa tu email" id="email">
+                    <label for="email" class="label">Email</label>
+                </div>
+                <div class="inputContainer">
+                    <input type="text" class="input" placeholder="ingresa tu nombre" id="username">
+                    <label for="username" class="label">Nombre</label>
+                </div>
+                <div class="inputContainer">
+                    <input type="tel" class="input" placeholder="ingresa tu celular" id="telefono">
+                    <label for="telefono" class="label">Teléfono</label>
+                </div>
+                <div class="inputContainer">
+                    <input type="password" class="input" placeholder="agrega una clave" id="pass">
+                    <label for="pass" class="label">Clave</label>
+                </div>
+                <div class="inputContainer">
+                    <input type="password" class="input" placeholder="repite la clave" id="passconfirm">
+                    <label for="passconfirm" class="label">Confirmar clave</label>
+                </div>
+                <input type="submit" class="submitBtn" value="Registrar">
+            </form>
+        </section>
+    </main>
+    <footer class="footerpage">
+        <ul class="footerpage__redes">
+            <li class="footerpage__redes__item">
+                <a href="https://www.twitter.com/miperfil" target="_blank">
+                    <img src="../images/twitter.png" alt="red social Twitter" width="48" height="48">
+                </a>
+            </li>
+            <li class="footerpage__redes__item">
+                <a href="https://www.facebook.com/miperfil" target="_blank">
+                    <img src="../images/facebook.png" alt="red social Facebook" width="48" height="48">
+                </a>
+            </li>
+            <li class="footerpage__redes__item">
+                <a href="https://www.instagram.com/miperfil" target="_blank">
+                    <img src="../images/instagram.png" alt="red social Instagram" width="48" height="48">
+                </a>
+            </li>
+            <li class="footerpage__redes__item">
+                <a href='https://cafecito.app/compraentubarrio' rel='noopener' target='_blank'>
+                    <img srcset='https://cdn.cafecito.app/imgs/buttons/button_6.png 1x, 
+                        https://cdn.cafecito.app/imgs/buttons/button_6_2x.png 2x, 
+                        https://cdn.cafecito.app/imgs/buttons/button_6_3.75x.png 3.75x'
+                        src='https://cdn.cafecito.app/imgs/buttons/button_6.png'
+                        alt='Invitame un café en cafecito.app' /><!-- ojo -->
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
