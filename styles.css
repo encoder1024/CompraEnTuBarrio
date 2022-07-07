@@ -687,6 +687,30 @@ body {
 
 /* --------------- PAGINA SEARCH ----------------------------------------------------------------------------- */
 
+/* INICIO: APLICANDO GRID y FLEX */
+.layout__search{
+    display: grid;
+    grid-template-areas: 
+        'header header header header'
+        'main main main main'
+        'footer footer footer footer'
+    ;
+}
+
+.layout__header__search{
+    grid-area: header;
+}
+
+.layout__main__search{
+    grid-area: main;
+}
+
+.layout__footer__search{
+    grid-area: footer;
+}
+
+/* FINAL: APLICANDO GRID y FLEX */
+
 .bodymain__acciones ul {
     list-style: none;
     padding: 10px 5px;
