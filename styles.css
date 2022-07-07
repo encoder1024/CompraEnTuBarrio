@@ -573,6 +573,7 @@ body {
 
 .mainMenu a {
     text-decoration: none;
+    width: 100%;
 }
 
 .item {
