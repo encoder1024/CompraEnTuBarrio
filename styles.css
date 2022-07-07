@@ -756,7 +756,57 @@ body {
     text-align: left;
 }
 
+/* -------------------------------------------------------- PAGINA PROFILE ------------------------------------*/
+
+/* INICIO: APLICANDO GRID y FLEX */
+.layout__profile{
+    display: grid;
+    grid-template-areas: 
+        'header header header header'
+        'main main main main'
+        'footer footer footer footer'
+    ;
+}
+
+.layout__header__profile{
+    grid-area: header;
+}
+
+.layout__main__profile{
+    grid-area: main;
+}
+
+.layout__footer__profile{
+    grid-area: footer;
+}
+
+/* FINAL: APLICANDO GRID y FLEX */
+
 /* --------------- PAGINA WHO WE ARE ------------------------------------------------------------------------ */
+
+/* INICIO: APLICANDO GRID y FLEX */
+.layout__whoweare{
+    display: grid;
+    grid-template-areas: 
+        'header header header header'
+        'main main main main'
+        'footer footer footer footer'
+    ;
+}
+
+.layout__header__whoweare{
+    grid-area: header;
+}
+
+.layout__main__whoweare{
+    grid-area: main;
+}
+
+.layout__footer__whoweare{
+    grid-area: footer;
+}
+
+/* FINAL: APLICANDO GRID y FLEX */
 
 .bodymain__somos h2 {
     padding: 5px 10px;
