@@ -30,6 +30,7 @@ nav a {
 	color: black;
 	cursor: pointer;
 }
+
 nav .animation {
 	position: absolute;
 	height: 100%;
@@ -289,6 +290,11 @@ body {
 
 .layout__footer{
     grid-area: footer;
+
+}
+
+.layout__footer a{
+    width: fit-content;
 }
 
 /* FINAL: APLICANDO GRID y FLEX */
@@ -564,7 +570,7 @@ body {
     border: solid 1px black;
 } */
 
-.mainMenu {
+/* .mainMenu {
     width: 30vw;
     display: block;
     border-radius: 10px;
@@ -642,7 +648,7 @@ body {
     top: 0;
     opacity: 1;
     /* background-color: #d8d824; */
-    border-top: 24px solid transparent;
+/*    border-top: 24px solid transparent;
     border-left: 11px solid #fcdc29;
     border-bottom: 24px solid transparent;
 }
@@ -663,7 +669,7 @@ body {
     top: 0;
     opacity: 1;
     /*     background-color: #d8d824; */
-    border-top: 24px solid transparent;
+/*    border-top: 24px solid transparent;
     border-right: 11px solid #fcdc29;
     border-bottom: 24px solid transparent;
 }
@@ -684,7 +690,7 @@ body {
 
 .item:target .subMenu {
     max-height: 10em;
-}
+} */
 
 /* --------------- PAGINA SEARCH ----------------------------------------------------------------------------- */
 
