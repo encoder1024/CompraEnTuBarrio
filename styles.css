@@ -220,14 +220,15 @@ body {
 
 .navbar .menu-items {
   padding-top: 120px;
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  box-shadow: 0 0 2000px rgba(255, 255, 255, 1);
+  background-color: white;
   height: 100vh;
   width: 100%;
   transform: translate(-150%);
   display: flex;
   flex-direction: column;
-  margin-left: -40px;
-  padding-left: 50px;
+  margin-left: -4px;
+  padding-left: 5px;
   transition: transform 0.5s ease-in-out;
   text-align: center;
 }
@@ -573,6 +574,7 @@ body {
 
 .mainMenu a {
     text-decoration: none;
+    width: 100%;
 }
 
 .item {
@@ -686,6 +688,30 @@ body {
 
 /* --------------- PAGINA SEARCH ----------------------------------------------------------------------------- */
 
+/* INICIO: APLICANDO GRID y FLEX */
+.layout__search{
+    display: grid;
+    grid-template-areas: 
+        'header header header header'
+        'main main main main'
+        'footer footer footer footer'
+    ;
+}
+
+.layout__header__search{
+    grid-area: header;
+}
+
+.layout__main__search{
+    grid-area: main;
+}
+
+.layout__footer__search{
+    grid-area: footer;
+}
+
+/* FINAL: APLICANDO GRID y FLEX */
+
 .bodymain__acciones ul {
     list-style: none;
     padding: 10px 5px;
@@ -731,7 +757,57 @@ body {
     text-align: left;
 }
 
+/* -------------------------------------------------------- PAGINA PROFILE ------------------------------------*/
+
+/* INICIO: APLICANDO GRID y FLEX */
+.layout__profile{
+    display: grid;
+    grid-template-areas: 
+        'header header header header'
+        'main main main main'
+        'footer footer footer footer'
+    ;
+}
+
+.layout__header__profile{
+    grid-area: header;
+}
+
+.layout__main__profile{
+    grid-area: main;
+}
+
+.layout__footer__profile{
+    grid-area: footer;
+}
+
+/* FINAL: APLICANDO GRID y FLEX */
+
 /* --------------- PAGINA WHO WE ARE ------------------------------------------------------------------------ */
+
+/* INICIO: APLICANDO GRID y FLEX */
+.layout__whoweare{
+    display: grid;
+    grid-template-areas: 
+        'header header header header'
+        'main main main main'
+        'footer footer footer footer'
+    ;
+}
+
+.layout__header__whoweare{
+    grid-area: header;
+}
+
+.layout__main__whoweare{
+    grid-area: main;
+}
+
+.layout__footer__whoweare{
+    grid-area: footer;
+}
+
+/* FINAL: APLICANDO GRID y FLEX */
 
 .bodymain__somos h2 {
     padding: 5px 10px;

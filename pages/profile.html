@@ -10,10 +10,38 @@
     <title>CompraEnTuBarrio | cuenta</title>
 </head>
 
-<body>
-    <header class="encabezado">
-        <nav>
-            <ul class="encabezado__menu">
+<body class="layout__profile">
+    <header class="encabezado layout__header__profile">
+        <nav class="displayNavMobile">
+            <div class="navbar">
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>  
+<!--                 <div class="logo">
+                    <h1>Navbar</h1>
+                </div> -->
+                <div class="menu-items">
+                    <li><a href="../index.html">inicio</a></li>
+                    <li><a href="./map.html">mapa</a></li>
+                    <li><a href="./search.html">busqueda</a></li>
+                    <li><a href="#">cuenta</a></li>
+                    <li><a href="./who-we-are.html">nosotros</a></li>
+                </div>
+                </div>
+            </div>
+        </nav>  
+        <nav class="nav__animacion displayNavDesktop">
+            <a href="../index.html">inicio</a>
+            <a href="./map.html">mapa</a>
+            <a href="./search.html">busqueda</a>
+            <a href="#">cuenta</a>
+            <a href="./who-we-are.html">nosotros</a>
+            <div class="animation start-portefolio"></div>
+<!--             <ul class="encabezado__menu">
                 <li class="encabezado__menu__item"><a href="../index.html">inicio</a></li>
                 <li class="encabezado__menu__item"><a href="./map.html">mapa</a></li>
                 <li class="encabezado__menu__item"><a href="./search.html">busqueda</a></li>
@@ -26,11 +54,11 @@
                     </ul>
                 </li>
                 <li class="encabezado__menu__item"><a href="./who-we-are.html">nosotros</a></li>
-            </ul>
+            </ul> -->
         </nav>
         <h1 class="encabezado__titulo">Compra en tu barrio<span class="displayOnOff"> a emprendedores vecinos</span></h1>
     </header>
-    <main class="bodymain">
+    <main class="bodymain layout__main__profile">
         <section class="bodymain__acciones">
             <div>
                 <ul>
@@ -78,7 +106,7 @@
             </form>
         </section>
     </main>
-    <footer class="footerpage">
+    <footer class="footerpage layout__footer__profile">
         <ul class="footerpage__redes">
             <li class="footerpage__redes__item">
                 <a href="https://www.twitter.com/miperfil" target="_blank">
