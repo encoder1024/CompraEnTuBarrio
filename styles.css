@@ -367,7 +367,7 @@ body {
     width: 100%;
     min-height: 100vh;
     position: relative;
-/*     padding-bottom: 13vh; */
+    padding-bottom: 13vh;
 }
 
 .bodymain__buscar {
@@ -520,9 +520,9 @@ body {
 /*     font-family: 'lato';
     list-style: none;
     text-decoration: none; */
-    position: relative;
+/*     position: relative; */
 /*     border: solid 1px black; */
-    height: 100vh;
+    height: 56vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -722,6 +722,11 @@ body {
 }
 
 /* FINAL: APLICANDO GRID y FLEX */
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+}
 
 .bodymain__acciones ul {
     list-style: none;
