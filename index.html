@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Consigna: a partir del diseño hecho y los conocimientos adquiridos de bootstrap, 
+    generar el index y una página más a elección que demuestre el uso correcto del mismo. 
+    Después, cargar todo a github -->
+
+<!-- notas de la entrega:
+1) voy a entregar index y search como páginas que tienen aplicado bootstrap.
+-->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/dist/mdb5/standard/core.min.css">
+    <link rel="stylesheet" id="roboto-subset.css-css" href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/mdb5/fonts/roboto-subset.css?ver=3.9.0-update.5" type="text/css" media="all">
     <!-- css -->
     <link rel="stylesheet" href="./styles.css">
     <title>CompraEnTuBarrio | inicio</title>
@@ -21,9 +34,6 @@
                     <span class="line line2"></span>
                     <span class="line line3"></span>
                 </div>  
-<!--                 <div class="logo">
-                    <h1>Navbar</h1>
-                </div> -->
                 <div class="menu-items">
                     <li><a href="#">inicio</a></li>
                     <li><a href="./pages/map.html">mapa</a></li>
@@ -41,20 +51,6 @@
             <a href="./pages/profile.html">cuenta</a>
             <a href="./pages/who-we-are.html">nosotros</a>
             <div class="animation start-home"></div>
-<!--             <ul class="encabezado__menu">
-                <li class="encabezado__menu__item"><a href="#">inicio</a></li>
-                <li class="encabezado__menu__item"><a href="./pages/map.html">mapa</a></li>
-                <li class="encabezado__menu__item"><a href="./pages/search.html">busqueda</a></li>
-                <li class="encabezado__menu__item itemSubmenu">
-                    <a href="./pages/profile.html">cuenta</a>
-                    <ul class="encabezado__lista__submenu">
-                        <li class="bodymain__acciones__lista"><a class="bodymain__acciones__lista__item">Publicar</a></li>
-                        <li class="bodymain__acciones__lista"><a class="bodymain__acciones__lista__item">info</a></li>
-                        <li class="bodymain__acciones__lista"><a class="bodymain__acciones__lista__item">Favoritos</a></li>
-                    </ul>
-                </li>
-                <li class="encabezado__menu__item"><a href="./pages/who-we-are.html">nosotros</a></li>
-            </ul> -->
         </nav>
 
         <h1 class="encabezado__titulo">Compra en tu barrio<span class="displayOnOff"> a emprendedores vecinos</span></h1>
@@ -63,7 +59,6 @@
         <section class="bodymain__buscar">
             <div>
                 <input type="text" placeholder="Que estás buscando?" class="bodymain__buscar__input">
-<!--                 <a href="./pages/search.html"><button class="bodymain__buscar__boton">Buscar</button></a> -->
             </div>
             <div class="bodymain__buscar__position">
                 <img src="./images/icon-ubication-min.png" alt="icono de tu ubicación actual">
@@ -136,34 +131,76 @@
             </div>
         </section>
     </main>
-    <footer class="footerpage layout__footer">
-        <ul class="footerpage__redes">
-            <li class="footerpage__redes__item">
-                <a href="https://www.twitter.com/miperfil" target="_blank">
-                    <img src="./images/twitter.png" alt="red social Twitter" width="48" height="48">
+    <footer class="bg-light text-center text-white footerpage layout__footer">
+        <!-- Grid container -->
+        <div class="container p-0 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a
+                class="btn btn-primary btn-floating m-1"
+                style="background-color: #3b5998;"
+                href="#!"
+                role="button"
+                ><i class="fab fa-facebook-f"></i
+                ></a>
+        
+                <!-- Twitter -->
+                <a
+                class="btn btn-primary btn-floating m-1"
+                style="background-color: #55acee;"
+                href="#!"
+                role="button"
+                ><i class="fab fa-twitter"></i
+                ></a>
+        
+                <!-- Google -->
+                <a
+                class="btn btn-primary btn-floating m-1"
+                style="background-color: #dd4b39;"
+                href="#!"
+                role="button"
+                ><i class="fab fa-google"></i
+                ></a>
+        
+                <!-- Instagram -->
+                <a
+                class="btn btn-primary btn-floating m-1"
+                style="background-color: #ac2bac;"
+                href="#!"
+                role="button"
+                ><i class="fab fa-instagram"></i
+                ></a>
+
+                <!-- Un cafecito -->
+                <a 
+                class="btn btn-primary btn-floating m-1" 
+                href='https://cafecito.app/compraentubarrio' 
+                rel='noopener' 
+                target='_blank'
+                role="button"
+                ><img srcset='https://cdn.cafecito.app/imgs/buttons/button_6.png 1x, 
+                https://cdn.cafecito.app/imgs/buttons/button_6_2x.png 2x, 
+                https://cdn.cafecito.app/imgs/buttons/button_6_3.75x.png 3.75x'
+                src='https://cdn.cafecito.app/imgs/buttons/button_6.png'
+                alt='Invitame un café en cafecito.app' />
                 </a>
-            </li>
-            <li class="footerpage__redes__item">
-                <a href="https://www.facebook.com/miperfil" target="_blank">
-                    <img src="./images/facebook.png" alt="red social Facebook" width="48" height="48">
-                </a>
-            </li>
-            <li class="footerpage__redes__item">
-                <a href="https://www.instagram.com/miperfil" target="_blank">
-                    <img src="./images/instagram.png" alt="red social Instagram" width="48" height="48">
-                </a>
-            </li>
-            <li class="footerpage__redes__item">
-                <a href='https://cafecito.app/compraentubarrio' rel='noopener' target='_blank'>
-                    <img srcset='https://cdn.cafecito.app/imgs/buttons/button_6.png 1x, 
-                        https://cdn.cafecito.app/imgs/buttons/button_6_2x.png 2x, 
-                        https://cdn.cafecito.app/imgs/buttons/button_6_3.75x.png 3.75x'
-                        src='https://cdn.cafecito.app/imgs/buttons/button_6.png'
-                        alt='Invitame un café en cafecito.app' /><!-- ojo -->
-                </a>
-            </li>
-        </ul>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright:
+          <a class="text-white" href="#!">CompraEnTuBarrio.com.ar</a>
+        </div>
+        <!-- Copyright -->
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

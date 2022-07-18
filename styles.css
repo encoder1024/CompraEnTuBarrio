@@ -30,6 +30,7 @@ nav a {
 	color: black;
 	cursor: pointer;
 }
+
 nav .animation {
 	position: absolute;
 	height: 100%;
@@ -289,6 +290,11 @@ body {
 
 .layout__footer{
     grid-area: footer;
+
+}
+
+.layout__footer a{
+    width: fit-content;
 }
 
 /* FINAL: APLICANDO GRID y FLEX */
@@ -359,7 +365,9 @@ body {
     background-image: url(./images/fondogina.png);
     background-size: contain;
     width: 100%;
-/*     height: fit-content; */
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 13vh;
 }
 
 .bodymain__buscar {
@@ -398,6 +406,7 @@ body {
     padding-top: 5px;
     width: 100%;
     text-align: center;
+    padding-bottom: 13vh;
 }
 
 .tablanovedades {
@@ -453,7 +462,9 @@ body {
     background-color: lightseagreen;
     background-image: url(./images/encabezado_50.jpg);
     text-align: center;
-    height: 17vh;
+/*     position: absolute;
+    bottom: 0px;
+    width: 100%; */
 }
 
 .footerpage__redes {
@@ -582,7 +593,7 @@ body {
     overflow: hidden;
 }
 
-.btn {
+.btn__filtro {
     display: block;
     padding: 15px 20px;
     background-color: #ff6f61;
@@ -591,7 +602,7 @@ body {
 
 }
 
-.btn:before {
+.btn__filtro:before {
     content: '';
     position: absolute;
     width: 0;
@@ -605,7 +616,7 @@ body {
 
 }
 
-.btn i {
+.btn__filtro i {
     margin-right: 10px;
 }
 
@@ -662,7 +673,7 @@ body {
     right: 0px;
     top: 0;
     opacity: 1;
-    /*     background-color: #d8d824; */
+    /*     background-color: #d8d824;*/
     border-top: 24px solid transparent;
     border-right: 11px solid #fcdc29;
     border-bottom: 24px solid transparent;
@@ -711,6 +722,11 @@ body {
 }
 
 /* FINAL: APLICANDO GRID y FLEX */
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+}
 
 .bodymain__acciones ul {
     list-style: none;
