@@ -1,0 +1,7 @@
+.contenidoPrincipal{
+    background-color: map-get($colors, "color-principal");
+}
+
+.boton{
+    padding: $margin-auto;
+}
