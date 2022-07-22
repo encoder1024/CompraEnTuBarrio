@@ -494,7 +494,7 @@ body {
 
 /*  ------------------- PAGINA MAP --------------------------------------------------------------------*/
 
-/* TO-DO me falta resolver para la pantalla de un celular en 320px de ancho como queda el mapa y la lista de filtro */
+/* TODO: me falta resolver para la pantalla de un celular en 320px de ancho como queda el mapa y la lista de filtro */
 
 /* INICIO: APLICANDO GRID y FLEX */
 .layout__mapa{

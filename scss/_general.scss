@@ -4,28 +4,127 @@
     box-sizing: border-box;
 }
 
-/* body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-} */
+/* TODO: ver este tema, pro que debería estar en la general, si es que no lo estoy pisando con otra cosa */
+body {
+    font-family: "Poppins", sans-serif;
+}
 
-/* .header{
-    background-color: map-get($colors, "color-secundario");
 
-    &__nav__lista{
+/* ENCABEZADO */
+
+.encabezado {
+    background-color: rgb(32, 90, 178);
+    background-image: url(../images/encabezado_50.jpg);
+    position: sticky;
+    top: 0px;
+    height: calc(115px + 2vh);/* 15vh; */
+    text-align: center;
+    z-index: 100000;
+
+    &__menu__item {
+        display: inline-block;
+        margin: 5px;
+        z-index: 100000;
+    }
+
+    &__menu__item a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        text-transform: uppercase;
+        z-index: 100000;
+    }
+
+    &__menu {
         list-style: none;
+        margin: 0 auto;
+        width: fit-content;
+        z-index: 100000;
     }
 
-    &__nav__lista__item{
-        color: white;
+    &__titulo {
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, .7);
+        border-radius: 7px;
+        width: fit-content;
+        text-align: center;
+        transform: translateY(2px);
+        z-index: 100000;
+    }
+}
 
-        a{
-            text-decoration: line-through;
-        
-            &:hover{
-                color: blue;
-            }
-        }
+.itemSubmenu {
+    position: relative;
+    z-index: 100000;
+}
 
+.encabezado__lista__submenu {
+    background-color: lightseagreen;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    display: none;
+    text-transform: uppercase;
+    text-align: left;
+    z-index: 100000;
+}
+
+.itemSubmenu:hover .encabezado__lista__submenu {
+    display: block;
+    z-index: 100000;
+}
+
+/* FOOTER */
+
+.footerpage {
+    background-color: lightseagreen;
+    background-image: url(../images/encabezado_50.jpg);
+    text-align: center;
+
+    &__redes {
+        list-style: none;
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    &__redes__item {
+        display: inline-block;
+        margin: 16px;
+    }
+
+}
+
+/* ---------------------------------- PAGINA UNDER CONSTRUCTION ----------------------------------------------*/
+
+.underConstruction {
+    text-align: center;
+}
+
+.underConstruction img {
+    width: 80vw;
+    margin-top: 20px;
+    max-width: 30em;
+}
+
+
+/* ---------------------------------- MEDIAQUERIES -----------------------------------------------------------*/
+
+@media screen and (max-width: 320px) {
+    .encabezado__titulo{
+        transform: translateY(-10px);
 
     }
-} */
+}
+
+@media screen and (min-height: 900px) {
+
+
+    .encabezado{
+        background-image: url(../images/encabezado_short.jpg);
+    }
+
+    .footerpage{
+        background-image: url(../images/encabezado_short.jpg);
+    }
+
+
+}

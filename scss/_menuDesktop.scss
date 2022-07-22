@@ -77,3 +77,15 @@ nav .start-contact, a:nth-child(5):hover~.animation {
 	left: 470px;
 	background-color: #e67e22;
 }
+
+@media screen and (max-width: 600px) {
+    .displayNavMobile{
+        display: block;
+        background-color: transparent;
+        width: 90vw;
+    }
+
+    .displayNavDesktop{
+        display: none;
+    }
+}

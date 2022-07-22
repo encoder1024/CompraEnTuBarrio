@@ -8,30 +8,94 @@ $color-secundario: rgb(212, 71, 255); */
   padding: 0;
   box-sizing: border-box; }
 
-/* body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-} */
-/* .header{
-    background-color: map-get($colors, "color-secundario");
+/* TODO: ver este tema, pro que debería estar en la general, si es que no lo estoy pisando con otra cosa */
+body {
+  font-family: "Poppins", sans-serif; }
 
-    &__nav__lista{
-        list-style: none;
-    }
+/* ENCABEZADO */
+.encabezado {
+  background-color: #205ab2;
+  background-image: url(../images/encabezado_50.jpg);
+  position: sticky;
+  top: 0px;
+  height: calc(115px + 2vh);
+  /* 15vh; */
+  text-align: center;
+  z-index: 100000; }
+  .encabezado__menu__item {
+    display: inline-block;
+    margin: 5px;
+    z-index: 100000; }
+  .encabezado__menu__item a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    z-index: 100000; }
+  .encabezado__menu {
+    list-style: none;
+    margin: 0 auto;
+    width: fit-content;
+    z-index: 100000; }
+  .encabezado__titulo {
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 7px;
+    width: fit-content;
+    text-align: center;
+    transform: translateY(2px);
+    z-index: 100000; }
 
-    &__nav__lista__item{
-        color: white;
+.itemSubmenu {
+  position: relative;
+  z-index: 100000; }
 
-        a{
-            text-decoration: line-through;
-        
-            &:hover{
-                color: blue;
-            }
-        }
+.encabezado__lista__submenu {
+  background-color: lightseagreen;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  display: none;
+  text-transform: uppercase;
+  text-align: left;
+  z-index: 100000; }
 
+.itemSubmenu:hover .encabezado__lista__submenu {
+  display: block;
+  z-index: 100000; }
 
-    }
-} */
+/* FOOTER */
+.footerpage {
+  background-color: lightseagreen;
+  background-image: url(../images/encabezado_50.jpg);
+  text-align: center; }
+  .footerpage__redes {
+    list-style: none;
+    margin: 0 auto;
+    width: fit-content; }
+  .footerpage__redes__item {
+    display: inline-block;
+    margin: 16px; }
+
+/* ---------------------------------- PAGINA UNDER CONSTRUCTION ----------------------------------------------*/
+.underConstruction {
+  text-align: center; }
+
+.underConstruction img {
+  width: 80vw;
+  margin-top: 20px;
+  max-width: 30em; }
+
+/* ---------------------------------- MEDIAQUERIES -----------------------------------------------------------*/
+@media screen and (max-width: 320px) {
+  .encabezado__titulo {
+    transform: translateY(-10px); } }
+
+@media screen and (min-height: 900px) {
+  .encabezado {
+    background-image: url(../images/encabezado_short.jpg); }
+  .footerpage {
+    background-image: url(../images/encabezado_short.jpg); } }
+
 /* menu desktop */
 nav {
   margin: 7px auto 0;
@@ -108,11 +172,15 @@ nav .start-contact, a:nth-child(5):hover ~ .animation {
   left: 470px;
   background-color: #e67e22; }
 
-/* menu mobile */
-body {
-  font-family: "Poppins", sans-serif;
-  /* TODO: ver este tema, pro que debería estar en la general, si es que no lo estoy pisando con otra cosa */ }
+@media screen and (max-width: 600px) {
+  .displayNavMobile {
+    display: block;
+    background-color: transparent;
+    width: 90vw; }
+  .displayNavDesktop {
+    display: none; } }
 
+/* menu mobile */
 .container {
   max-width: 1050px;
   width: 90%;
@@ -234,10 +302,510 @@ body {
 .nav-container input[type="checkbox"]:checked ~ .logo {
   display: none; }
 
-.contenidoPrincipal {
-  background-color: #1338dd; }
+@media screen and (max-width: 600px) {
+  .displayNavMobile {
+    display: block;
+    background-color: transparent;
+    width: 90vw; }
+  .displayNavDesktop {
+    display: none; } }
 
-.boton {
-  padding: 0 auto; }
+/* ---------------- PAGINA INDEX ---------------------------------------------------------------*/
+/* INICIO: APLICANDO GRID y FLEX */
+.layout {
+  display: grid;
+  grid-template-areas: 'header header header header' 'main main main main' 'footer footer footer footer'; }
+
+.layout__header {
+  grid-area: header; }
+
+.layout__main {
+  grid-area: main; }
+
+.layout__footer {
+  grid-area: footer; }
+
+.layout__footer a {
+  width: fit-content; }
+
+/* FINAL: APLICANDO GRID y FLEX */
+/* .encabezado {
+    background-color: rgb(32, 90, 178);
+    background-image: url(../images/encabezado_50.jpg);
+    position: sticky;
+    top: 0px;
+    height: calc(115px + 2vh);
+    text-align: center;
+    z-index: 100000;
+}
+
+.encabezado__menu__item {
+    display: inline-block;
+    margin: 5px;
+    z-index: 100000;
+}
+
+.encabezado__menu__item a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    z-index: 100000;
+}
+
+.encabezado__menu {
+    list-style: none;
+    margin: 0 auto;
+    width: fit-content;
+    z-index: 100000;
+}
+
+.encabezado__titulo {
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 7px;
+    width: fit-content;
+    text-align: center;
+    transform: translateY(2px);
+    z-index: 100000;
+}
+
+.itemSubmenu {
+    position: relative;
+    z-index: 100000;
+}
+
+.encabezado__lista__submenu {
+    background-color: lightseagreen;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    display: none;
+    text-transform: uppercase;
+    text-align: left;
+    z-index: 100000;
+}
+
+.itemSubmenu:hover .encabezado__lista__submenu {
+    display: block;
+    z-index: 100000;
+}
+ */
+.bodymain {
+  background-color: lightseagreen;
+  background-image: url(../images/fondogina.png);
+  background-size: contain;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 13vh; }
+
+.bodymain__buscar {
+  margin: 0 auto;
+  width: fit-content;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.bodymain__buscar__input {
+  height: 50px;
+  border-radius: 100px;
+  font-size: 16px;
+  /*     margin-top: -1px;
+    vertical-align: middle; */
+  padding-left: 10px;
+  width: 80vw; }
+
+/* .bodymain__buscar__boton {
+    height: 50px;
+    border-radius: 6px;
+    padding: 5px;
+    margin-top: 18px;
+} */
+.bodymain__buscar__position {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center; }
+
+.bodymain__novedades {
+  padding-top: 5px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 13vh; }
+
+.tablanovedades {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  z-index: 0; }
+
+.tablanovedades__fila {
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  flex-direction: row;
+  /* entonces el eje principal es el horizontal */
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 0; }
+
+.grilla__item {
+  /*     background-color: aquamarine;
+    border: solid 1px rgb(47, 95, 79);
+    border-radius: 6px; */
+  /* border: solid 1px rgb(47, 95, 79); */
+  /* background-color: white; */
+  /* #81DBFE; */
+  border-radius: 7px;
+  width: 15rem;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  padding: 5px 5px;
+  flex-flow: column;
+  z-index: 0; }
+
+/* .tablanovedades__tabla {
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: auto;
+} */
+.grilla__item img {
+  border-radius: 7px;
+  object-fit: contain;
+  transition: all .5s ease-out; }
+
+.grilla__item:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  transition: all .5s ease-in-out; }
+
+.grilla__item {
+  overflow: hidden; }
+
+/* .footerpage {
+    background-color: lightseagreen;
+    background-image: url(../images/encabezado_50.jpg);
+    text-align: center;
+}
+
+.footerpage__redes {
+    list-style: none;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.footerpage__redes__item {
+    display: inline-block;
+    margin: 16px;
+} */
+/* .contenidoPrincipal{
+    background-color: map-get($colors, "color-principal");
+}
+
+.boton{
+    padding: $margin-auto;
+} */
+/*  ------------------- PAGINA MAP --------------------------------------------------------------------*/
+/* TODO: me falta resolver para la pantalla de un celular en 320px de ancho como queda el mapa y la lista de filtro */
+/* INICIO: APLICANDO GRID y FLEX */
+.layout__mapa {
+  display: grid;
+  grid-template-areas: 'header header header header' 'main main main aside' 'footer footer footer footer'; }
+
+.layout__mapa__header {
+  grid-area: header; }
+
+.layout__mapa__main {
+  grid-area: main;
+  background-size: cover; }
+
+.layout__mapa__aside {
+  grid-area: aside;
+  /*     border: solid 1px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightseagreen; }
+
+.layout__mapa__footer {
+  grid-area: footer; }
+
+/* FINAL: APLICANDO GRID y FLEX */
+.bodymain__mapa {
+  /*     font-family: 'lato';
+    list-style: none;
+    text-decoration: none; */
+  /*     position: relative; */
+  /*     border: solid 1px black; */
+  height: 56vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.bodymain__mapa__buscar {
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column; }
+
+.bodymain__buscar__input__mapa {
+  height: 50px;
+  border-radius: 100px;
+  font-size: 16px;
+  margin-top: 15px;
+  vertical-align: middle;
+  padding-left: 10px;
+  width: 100%; }
+
+.bodymain__mapa__source {
+  /*     position: absolute;
+    top: 10%;
+    left: 5%; */
+  overflow: hidden;
+  width: 95%;
+  height: 40vh;
+  border-radius: 10px;
+  /*     transform: translateZ(0px); */
+  border: 3px solid #eee;
+  /* border: solid 1px black; */ }
+
+.bodymain__mapa__source__iframe {
+  width: 100%;
+  height: 100%; }
+
+/* .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(100%, -38.5%);
+
+    border: solid 1px black;
+} */
+.mainMenu {
+  width: 30vw;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto; }
+
+.mainMenu a {
+  text-decoration: none;
+  width: 100%; }
+
+.item {
+  border-top: 1px solid #ef584a;
+  overflow: hidden; }
+
+.btn__filtro {
+  display: block;
+  padding: 15px 20px;
+  background-color: #ef584a;
+  color: #fff;
+  position: relative; }
+
+.btn__filtro:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid #ff6f61;
+  right: 15px;
+  bottom: -10px;
+  z-index: 9; }
+
+.btn__filtro i {
+  margin-right: 10px; }
+
+.subMenu {
+  background: #273057;
+  overflow: hidden;
+  transition: max-height 0.7s;
+  max-height: 0; }
+
+.subMenu a {
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 14px;
+  border-bottom: 1px solid #394c7f;
+  position: relative;
+  text-decoration: none; }
+
+.subMenu a:before {
+  content: '';
+  opacity: 0;
+  transition: opacity 0.3s; }
+
+.subMenu a:hover:before {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 6px;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  /* background-color: #d8d824; */
+  border-top: 24px solid transparent;
+  border-left: 11px solid #fcdc29;
+  border-bottom: 24px solid transparent; }
+
+.subMenu a:after {
+  content: '';
+  opacity: 0;
+  transition: opacity 0.3s; }
+
+.subMenu a:hover:after {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 6px;
+  right: 0px;
+  top: 0;
+  opacity: 1;
+  /*     background-color: #d8d824;*/
+  border-top: 24px solid transparent;
+  border-right: 11px solid #fcdc29;
+  border-bottom: 24px solid transparent; }
+
+.subMenu a:hover {
+  background: #273057;
+  background: -moz-linear-gradient(top, #273057 0%, #273057 50%, #394c7f 51%, #394c7f 100%);
+  background: -webkit-linear-gradient(top, #273057 0%, #273057 50%, #394c7f 51%, #394c7f 100%);
+  background: linear-gradient(to bottom, #273057 0%, #273057 50%, #394c7f 51%, #394c7f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#273057', endColorstr='#394c7f', GradientType=0);
+  transition: all 0.3s;
+  border-bottom: 1px solid #394c7f; }
+
+.subMenu a:last-child {
+  border: none; }
+
+.item:target .subMenu {
+  max-height: 10em; }
+
+@media screen and (max-width: 480px) {
+  .layout__mapa {
+    grid-template-areas: 'header header header header' 'main main main main' 'aside aside aside aside' 'footer footer footer footer'; }
+  .encabezado__titulo {
+    transform: translateY(5px); }
+  .mainMenu {
+    width: 60vw;
+    margin: 10px auto; }
+  .nav__animacion {
+    display: none; }
+  .displayOnOff {
+    display: none; } }
+
+/* --------------- PAGINA SEARCH ----------------------------------------------------------------------------- */
+/* INICIO: APLICANDO GRID y FLEX */
+.layout__search {
+  display: grid;
+  grid-template-areas: 'header header header header' 'main main main main' 'footer footer footer footer'; }
+
+.layout__header__search {
+  grid-area: header; }
+
+.layout__main__search {
+  grid-area: main; }
+
+.layout__footer__search {
+  grid-area: footer; }
+
+/* FINAL: APLICANDO GRID y FLEX */
+.carousel-item {
+  width: 100%;
+  height: 100%; }
+
+.bodymain__acciones ul {
+  list-style: none;
+  padding: 10px 5px; }
+
+.bodymain__acciones div {
+  width: fit-content;
+  margin: 0 auto; }
+
+.bodymain__acciones ul li {
+  list-style: none;
+  padding: 10px 5px; }
+
+.bodymain__acciones ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em; }
+
+.bodymain__acciones__lista:hover .bodymain__acciones__lista__item {
+  color: white; }
+
+.input {
+  /* también se aplica en la página profile */
+  border-radius: 7px;
+  font-size: 1em;
+  padding: 5px 5px;
+  margin: 5px 5px; }
+
+.submitBtn {
+  /* también se aplica en la página profile */
+  border-radius: 7px;
+  font-size: 1em;
+  padding: 10px 5px;
+  margin: 10px 5px; }
+
+.bodymain__novedades__form__registro {
+  /* también se aplica en la página profile */
+  width: fit-content;
+  margin: 0 auto;
+  text-align: left; }
+
+/* -------------------------------------------------------- PAGINA PROFILE ------------------------------------*/
+/* INICIO: APLICANDO GRID y FLEX */
+.layout__profile {
+  display: grid;
+  grid-template-areas: 'header header header header' 'main main main main' 'footer footer footer footer'; }
+
+.layout__header__profile {
+  grid-area: header; }
+
+.layout__main__profile {
+  grid-area: main; }
+
+.layout__footer__profile {
+  grid-area: footer; }
+
+/* FINAL: APLICANDO GRID y FLEX */
+/* --------------- PAGINA WHO WE ARE ------------------------------------------------------------------------ */
+/* INICIO: APLICANDO GRID y FLEX */
+.layout__whoweare {
+  display: grid;
+  grid-template-areas: 'header header header header' 'main main main main' 'footer footer footer footer'; }
+
+.layout__header__whoweare {
+  grid-area: header; }
+
+.layout__main__whoweare {
+  grid-area: main; }
+
+.layout__footer__whoweare {
+  grid-area: footer; }
+
+/* FINAL: APLICANDO GRID y FLEX */
+.bodymain__somos h2 {
+  padding: 5px 10px; }
+
+.bodymain__somos p {
+  padding: 5px 10px; }
+
+.centrado {
+  width: fit-content;
+  margin: 0 auto; }
+
+.texto__mensaje {
+  max-width: 197px;
+  resize: none; }
 
 /* main.scss: En este archivo solo poner parcials y generar parcials */
