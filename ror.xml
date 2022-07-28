@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://encoder1024.github.io/CompraEnTuBarrio</title>
+  <link>https://encoder1024.github.io/CompraEnTuBarrio</link>
+
+<item>
+     <link>https://encoder1024.github.io/CompraEnTuBarrio/</link>
+     <title>CompraEnTuBarrio | inicio</title>
+     <description>Compra en tu barrio a emprendedores vecinos, estamos para... </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://encoder1024.github.io/CompraEnTuBarrio/pages/map.html</link>
+     <title>CompraEnTuBarrio | mapa</title>
+     <description>CompraEnTuBarrio | mapa</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://encoder1024.github.io/CompraEnTuBarrio/pages/search.html</link>
+     <title>CompraEnTuBarrio | busqueda</title>
+     <description>CompraEnTuBarrio | busqueda</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://encoder1024.github.io/CompraEnTuBarrio/pages/profile.html</link>
+     <title>CompraEnTuBarrio | cuenta</title>
+     <description>CompraEnTuBarrio | cuenta</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://encoder1024.github.io/CompraEnTuBarrio/pages/who-we-are.html</link>
+     <title>CompraEnTuBarrio | nosotros</title>
+     <description>CompraEnTuBarrio | nosotros</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://encoder1024.github.io/CompraEnTuBarrio/index.html</link>
+     <title>CompraEnTuBarrio | inicio</title>
+     <description>Compra en tu barrio a emprendedores vecinos, estamos para... </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://encoder1024.github.io/CompraEnTuBarrio/pages/to-do-page.html</link>
+     <title>CompraEnTuBarrio | cuenta</title>
+     <description>CompraEnTuBarrio | cuenta</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
