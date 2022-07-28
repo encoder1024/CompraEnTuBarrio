@@ -1,0 +1,25 @@
+/* -------------------------------------------------------- PAGINA PROFILE ------------------------------------*/
+
+/* INICIO: APLICANDO GRID y FLEX */
+.layout__profile{
+    display: grid;
+    grid-template-areas: 
+        'header header header header'
+        'main main main main'
+        'footer footer footer footer'
+    ;
+}
+
+.layout__header__profile{
+    grid-area: header;
+}
+
+.layout__main__profile{
+    grid-area: main;
+}
+
+.layout__footer__profile{
+    grid-area: footer;
+}
+
+/* FINAL: APLICANDO GRID y FLEX */
