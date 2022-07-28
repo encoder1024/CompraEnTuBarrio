@@ -13,3 +13,11 @@ $colors: (
     "color-secundario": #ef584a,
     "color-alert": red
 );
+
+@mixin bodymain__buscar ($width, $top) {
+  margin: $margin-auto;
+  width: $width;
+  padding-top: $top;
+  display: flex;
+  flex-direction: column;
+}

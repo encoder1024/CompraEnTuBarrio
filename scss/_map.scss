@@ -46,14 +46,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} 
 
 .bodymain__mapa__buscar{
-    margin: $margin-auto;
+/*     margin: $margin-auto;
     width: 90%;
     padding-top: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; */
+    @include bodymain__buscar(90%, 10px);
 }
 
 .bodymain__buscar__input__mapa {

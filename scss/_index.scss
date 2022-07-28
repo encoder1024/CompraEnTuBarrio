@@ -101,11 +101,13 @@
 }
 
 .bodymain__buscar {
-    margin: 0 auto;
+/*     margin: 0 auto;
     width: fit-content;
     padding-top: 10px;
     display: flex;
     flex-direction: column;
+    align-items: center; */
+    @include bodymain__buscar (fit-content, 10px);
     align-items: center;
 }
 
