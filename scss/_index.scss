@@ -27,69 +27,6 @@
     width: fit-content;
 }
 
-/* FINAL: APLICANDO GRID y FLEX */
-
-/* .encabezado {
-    background-color: rgb(32, 90, 178);
-    background-image: url(../images/encabezado_50.jpg);
-    position: sticky;
-    top: 0px;
-    height: calc(115px + 2vh);
-    text-align: center;
-    z-index: 100000;
-}
-
-.encabezado__menu__item {
-    display: inline-block;
-    margin: 5px;
-    z-index: 100000;
-}
-
-.encabezado__menu__item a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    text-transform: uppercase;
-    z-index: 100000;
-}
-
-.encabezado__menu {
-    list-style: none;
-    margin: 0 auto;
-    width: fit-content;
-    z-index: 100000;
-}
-
-.encabezado__titulo {
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, .7);
-    border-radius: 7px;
-    width: fit-content;
-    text-align: center;
-    transform: translateY(2px);
-    z-index: 100000;
-}
-
-.itemSubmenu {
-    position: relative;
-    z-index: 100000;
-}
-
-.encabezado__lista__submenu {
-    background-color: lightseagreen;
-    list-style: none;
-    position: absolute;
-    top: 100%;
-    display: none;
-    text-transform: uppercase;
-    text-align: left;
-    z-index: 100000;
-}
-
-.itemSubmenu:hover .encabezado__lista__submenu {
-    display: block;
-    z-index: 100000;
-}
- */
 .bodymain {
     background-color: map-get($colors, "color-principal");
     background-image: url(../images/fondogina.png);
@@ -101,12 +38,6 @@
 }
 
 .bodymain__buscar {
-/*     margin: 0 auto;
-    width: fit-content;
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; */
     @include bodymain__buscar (fit-content, 10px);
     align-items: center;
 }
@@ -115,18 +46,9 @@
     height: 50px;
     border-radius: 100px;
     font-size: 16px;
-/*     margin-top: -1px;
-    vertical-align: middle; */
     padding-left: 10px;
     width: 80vw;
 }
-
-/* .bodymain__buscar__boton {
-    height: 50px;
-    border-radius: 6px;
-    padding: 5px;
-    margin-top: 18px;
-} */
 
 .bodymain__buscar__position {
     margin-top: 10px;
@@ -155,7 +77,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 5px;
-    flex-direction: row; /* entonces el eje principal es el horizontal */
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     z-index: 0;
@@ -164,11 +86,6 @@
 
 
 .grilla__item{
-/*     background-color: aquamarine;
-    border: solid 1px rgb(47, 95, 79);
-    border-radius: 6px; */
-    /* border: solid 1px rgb(47, 95, 79); */
-    /* background-color: white; *//* #81DBFE; */
     border-radius: 7px;
     width: 15rem;
     height: 30rem;
@@ -178,12 +95,6 @@
     flex-flow: column;
     z-index: 0;
 }
-
-/* .tablanovedades__tabla {
-    width: 100%;
-    margin: 0 auto;
-    overflow-x: auto;
-} */
 
 .grilla__item img {
     border-radius: 7px;
@@ -198,30 +109,4 @@
 }
 
 .grilla__item {overflow:hidden;}
-
-/* .footerpage {
-    background-color: lightseagreen;
-    background-image: url(../images/encabezado_50.jpg);
-    text-align: center;
-}
-
-.footerpage__redes {
-    list-style: none;
-    margin: 0 auto;
-    width: fit-content;
-}
-
-.footerpage__redes__item {
-    display: inline-block;
-    margin: 16px;
-} */
-
-
-/* .contenidoPrincipal{
-    background-color: map-get($colors, "color-principal");
-}
-
-.boton{
-    padding: $margin-auto;
-} */
 
