@@ -14,8 +14,7 @@ body {
 
 /* ENCABEZADO */
 .encabezado {
-  background-color: #205ab2;
-  background-image: url(../images/encabezado_50.jpg);
+  background-color: #929fba;
   position: sticky;
   top: 0px;
   height: calc(115px + 2vh);
@@ -38,7 +37,7 @@ body {
     z-index: 100000; }
   .encabezado__titulo {
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 7px;
     width: fit-content;
     text-align: center;
@@ -64,9 +63,12 @@ body {
   z-index: 100000; }
 
 /* FOOTER */
+.container-footer {
+  width: 100%; }
+
 .footerpage {
-  background-color: lightseagreen;
-  background-image: url(../images/encabezado_50.jpg);
+  background-color: #929fba;
+  /*     background-image: url(../images/encabezado_50.jpg); */
   text-align: center; }
   .footerpage__redes {
     list-style: none;
@@ -75,6 +77,24 @@ body {
   .footerpage__redes__item {
     display: inline-block;
     margin: 16px; }
+
+.btn.true-colors-final-f {
+  background-color: #3b5998; }
+
+.btn.true-colors-final-t {
+  background-color: #55acee; }
+
+.btn.true-colors-final-g {
+  background-color: #dd4b39; }
+
+.btn.true-colors-final-i {
+  background-color: #ac2bac; }
+
+.btn.true-colors-final-l {
+  background-color: #0082ca; }
+
+.btn.true-colors-final-h {
+  background-color: #333333; }
 
 /* ---------------------------------- PAGINA UNDER CONSTRUCTION ----------------------------------------------*/
 .underConstruction {
@@ -90,12 +110,19 @@ body {
   .encabezado__titulo {
     transform: translateY(-10px); } }
 
-@media screen and (min-height: 900px) {
-  .encabezado {
-    background-image: url(../images/encabezado_short.jpg); }
-  .footerpage {
-    background-image: url(../images/encabezado_short.jpg); } }
+/* @media screen and (min-height: 900px) {
 
+
+    .encabezado{
+        background-image: url(../images/encabezado_short.jpg);
+    }
+
+    .footerpage{
+        background-image: url(../images/encabezado_short.jpg);
+    }
+
+
+} */
 /* menu desktop */
 nav {
   margin: 7px auto 0;
@@ -400,6 +427,12 @@ nav .start-contact, a:nth-child(5):hover ~ .animation {
   padding-bottom: 13vh; }
 
 .bodymain__buscar {
+  /*     margin: 0 auto;
+    width: fit-content;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; */
   margin: 0 auto;
   width: fit-content;
   padding-top: 10px;
@@ -547,6 +580,11 @@ nav .start-contact, a:nth-child(5):hover ~ .animation {
   justify-content: center; }
 
 .bodymain__mapa__buscar {
+  /*     margin: $margin-auto;
+    width: 90%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column; */
   margin: 0 auto;
   width: 90%;
   padding-top: 10px;
