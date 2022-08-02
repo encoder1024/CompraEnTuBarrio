@@ -1,7 +1,5 @@
 /*  ------------------- PAGINA MAP --------------------------------------------------------------------*/
 
-/* TODO: me falta resolver para la pantalla de un celular en 320px de ancho como queda el mapa y la lista de filtro */
-
 /* INICIO: APLICANDO GRID y FLEX */
 .layout__mapa{
     display: grid;
@@ -23,7 +21,6 @@
 
 .layout__mapa__aside{
     grid-area: aside;
-/*     border: solid 1px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,11 +34,6 @@
 /* FINAL: APLICANDO GRID y FLEX */
 
 .bodymain__mapa {
-/*     font-family: 'lato';
-    list-style: none;
-    text-decoration: none; */
-/*     position: relative; */
-/*     border: solid 1px black; */
     height: 56vh;
     display: flex;
     align-items: center;
@@ -49,11 +41,6 @@
 } 
 
 .bodymain__mapa__buscar{
-/*     margin: $margin-auto;
-    width: 90%;
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column; */
     @include bodymain__buscar(90%, 10px);
 }
 
@@ -69,32 +56,18 @@
 }
 
 .bodymain__mapa__source {
-/*     position: absolute;
-    top: 10%;
-    left: 5%; */
     overflow: hidden;
     width: 95%;
     height: 40vh;
-
     border-radius: 10px;
-/*     transform: translateZ(0px); */
     border: 3px solid #eee;
-    /* border: solid 1px black; */
+
 }
 
 .bodymain__mapa__source__iframe{
     width: $pantalla-completa;
     height: $pantalla-completa;
 }
-
-/* .wrapper {
-    position: absolute;
-    top: 50%;
-    left: 48%;
-    transform: translate(100%, -38.5%);
-
-    border: solid 1px black;
-} */
 
 .mainMenu {
     width: 30vw;
@@ -173,7 +146,6 @@
     left: 0;
     top: 0;
     opacity: 1;
-    /* background-color: #d8d824; */
     border-top: 24px solid transparent;
     border-left: 11px solid #fcdc29;
     border-bottom: 24px solid transparent;
@@ -194,7 +166,6 @@
     right: 0px;
     top: 0;
     opacity: 1;
-    /*     background-color: #d8d824;*/
     border-top: 24px solid transparent;
     border-right: 11px solid #fcdc29;
     border-bottom: 24px solid transparent;
