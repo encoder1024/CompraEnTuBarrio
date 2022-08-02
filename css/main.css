@@ -8,7 +8,6 @@ $color-secundario: rgb(212, 71, 255); */
   padding: 0;
   box-sizing: border-box; }
 
-/* TODO: ver este tema, pro que debería estar en la general, si es que no lo estoy pisando con otra cosa */
 body {
   font-family: "Poppins", sans-serif; }
 
@@ -68,7 +67,6 @@ body {
 
 .footerpage {
   background-color: #929fba;
-  /*     background-image: url(../images/encabezado_50.jpg); */
   text-align: center; }
   .footerpage__redes {
     list-style: none;
@@ -96,6 +94,9 @@ body {
 .btn.true-colors-final-h {
   background-color: #333333; }
 
+div.copy-custom {
+  background-color: rgba(0, 0, 0, 0.2); }
+
 /* ---------------------------------- PAGINA UNDER CONSTRUCTION ----------------------------------------------*/
 .underConstruction {
   text-align: center; }
@@ -110,19 +111,6 @@ body {
   .encabezado__titulo {
     transform: translateY(-10px); } }
 
-/* @media screen and (min-height: 900px) {
-
-
-    .encabezado{
-        background-image: url(../images/encabezado_short.jpg);
-    }
-
-    .footerpage{
-        background-image: url(../images/encabezado_short.jpg);
-    }
-
-
-} */
 /* menu desktop */
 nav {
   margin: 7px auto 0;
