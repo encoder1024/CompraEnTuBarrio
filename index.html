@@ -1,215 +1,255 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<!-- Consigna: aplicar un mapa, un mixin y un extend para modificar cualquier elemento de nuestro sitio. Realizar las modificaciones necesarias para mejorar SEO en nuestro sitio
-    -Declarar un mapa y utilizar un map-get. Extender una clase de base y modificarla. Generar un mixin para reutilizar codigo.
-    -Suma keywords, description, title y encabezado a todas las páginas de tu sitio.
-    -Explica en un Google Docs los cambios realziados en el punto anterior. -->
+<!-- Consigna: A continuación te dejo algunas sugerencias generales:
+1) FIXMED:En primer lugar, empeza a reemplazar todos los textos falsos.
+2) FIXMED:Con respecto a las imágenes trata de que sean de buena calidad y que no estén pixeladas.
+3) FIXMED:Luego con la portada en donde figura el nav, te recomendaría usar  una imagen mas solida ya que así las secciones y el titulo pierde legibilidad.
+4) FIXMED:Luego la etiqueta style no es recomendable que se use en los HTML. Para ello debes citar esas propiedades en el CSS.
+5) FIXED:Luego trata de limpiar los HTML, ya que hay bastantes comentarios y estas dejando bastante espacio entre las etiquetas.
+6) FIXMED:Luego para el footer te recomiendo agregar algún elemento mas para ello podes usar los examples de BS. Este es el link; https://getbootstrap.com/docs/5.2/examples/footers/
+7) FIXMED:Por último, te paso algunas plantillas free de BS, estas te pueden dar algunas ideas y también podes descargar el código, obviamente tenes que personalizarlo.. 
+8) FIXMED:Cambiar los nombres de las fotografías de las galerías.
+-->
 
 <!-- notas de la entrega:
-1) el map ya estaba en la entrega anterior.
-2) en el SEO también agregué los archivos de sitemap generados con XML sitemaps
-3) ver el resto de las notas en el archivo google docs que se encuentra en el Readme del master en github.
-4) Para SASS II, apliqué mixins en _index.scss y _map.scss, definiendo en variables el mixin.
+1) reemplazo los textos en la página "nosotros"
+2) verificadas y actualizadas
+3) se cambia el color igual que el footer.
+4) se eliminan los estilos del HTML. Se agregan en _general.scss
+5) lo primero fue limpiar los html y ajustar formato. 
+6) cambie el footer
+7) utilicé un footer template y lo ajusté a las necesidades del proyecto
+8) se cambiaron los nombres de todas las fotografías.
 -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO -->
-    <meta name="keywords" content="comprar en tu barrio, emprendedores, comprar, mi barrio, mis vecinos, comprar en mi barrio, 
-    venta de garage, productos caceros, productos cercanos, producto local, comprar en córdoba">
-    <meta name="description" content="Compra en tu barrio a emprendedores vecinos, te damos la Bienvenida!!! somos un equipo de emprendedores vecinos que ofrecemos nuestros productos y servicios en nuestros barrios." ><!-- de 70 a 320 caracteres -->
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/dist/mdb5/standard/core.min.css">
-    <link rel="stylesheet" id="roboto-subset.css-css" href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/mdb5/fonts/roboto-subset.css?ver=3.9.0-update.5" type="text/css" media="all">
-    <!-- css -->
-<!--     <link rel="stylesheet" href="./styles.css"> -->
-    <link rel="stylesheet" href="./css/main.css">
-    <title>CompraEnTuBarrio | inicio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO -->
+  <meta name="keywords" content="comprar en tu barrio, emprendedores, comprar, mi barrio, mis vecinos, comprar en mi barrio, 
+  venta de garage, productos caceros, productos cercanos, producto local, comprar en córdoba">
+  <meta name="description"
+    content="Compra en tu barrio a emprendedores vecinos, te damos la Bienvenida!!! somos un equipo de emprendedores vecinos que ofrecemos nuestros productos y servicios en nuestros barrios.">
+  <!-- bootstrap -->
+  <script src="https://kit.fontawesome.com/33492058ee.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/dist/mdb5/standard/core.min.css">
+  <link rel="stylesheet" id="roboto-subset.css-css"
+    href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/mdb5/fonts/roboto-subset.css?ver=3.9.0-update.5"
+    type="text/css" media="all">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/main.css">
+  <title>CompraEnTuBarrio | inicio</title>
 </head>
 
 <body class="layout">
-    <header class="encabezado layout__header">
-        <nav class="displayNavMobile">
-            <div class="navbar">
-                <div class="container nav-container">
-                    <input class="checkbox" type="checkbox" name="" id="" />
-                    <div class="hamburger-lines">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                </div>  
-                <div class="menu-items">
-                    <li><a href="#">inicio</a></li>
-                    <li><a href="./pages/map.html">mapa</a></li>
-                    <li><a href="./pages/search.html">busqueda</a></li>
-                    <li><a href="./pages/profile.html">cuenta</a></li>
-                    <li><a href="./pages/who-we-are.html">nosotros</a></li>
-                </div>
-                </div>
-            </div>
-        </nav>
-        <nav class="nav__animacion displayNavDesktop principal">
-            <a href="#">inicio</a>
-            <a href="./pages/map.html">mapa</a>
-            <a href="./pages/search.html">busqueda</a>
-            <a href="./pages/profile.html">cuenta</a>
-            <a href="./pages/who-we-are.html">nosotros</a>
-            <div class="animation start-home"></div>
-        </nav>
-
-        <h1 class="encabezado__titulo">Compra en tu barrio<span class="displayOnOff"> a emprendedores vecinos</span></h1>
-    </header>
-    <main class="bodymain layout__main">
-        <section class="bodymain__buscar">
-            <div>
-                <input type="text" placeholder="Que estás buscando?" class="bodymain__buscar__input">
-            </div>
-            <div class="bodymain__buscar__position">
-                <img src="./images/icon-ubication-min.png" alt="icono de tu ubicación actual">
-                <label for="ubicacion">Tu ubicación actual es en la zona de...</label>
-            </div>
-        </section>
-        <section class="bodymain__novedades">
-            <h2>Las últimas novedades del barrio:</h2>
-            <div class="tablanovedades">
-                <div class="tablanovedades__fila fila01">
-                    <div class="grilla__item item01">
-                        <img src="./images/novedades/WhatsApp_Image_2022-07-02_at_12.38.50_PM.jpeg" alt="promo relax">
-                    </div>
-                    <div class="grilla__item item02">
-                        <img src="./images/novedades/WhatsApp_Image_2022-07-02_at_12.11.56_PM.jpeg" alt="mochila solidaria">
-                    </div>
-                    <div class="grilla__item item03">
-                        <img src="./images/novedades/WhatsApp_Image_2022-07-02_at_2.04.08_PM.jpeg" alt="campera">
-                    </div>
-                    <div class="grilla__item item04">
-                        <img src="./images/novedades/WhatsApp_Image_2022-07-02_at_12.48.47_PM.jpeg" alt="vacaciones de invierno">
-                    </div>
-                    <div class="grilla__item item05">
-                        <img src="./images/novedades/WhatsApp_Image_2022-07-03_at_1.06.27_PM.jpeg" alt="torta helada">
-                    </div>
-                    <div class="grilla__item item06">
-                        <img src="./images/novedades/WhatsApp_Image_2022-07-03_at_3.58.13_PM.jpeg" alt="pendulo hebreo">
-                    </div>
-                </div>
-                <div class="tablanovedades__fila fila02">
-                    <div class="grilla__item item07">
-                        <img src="./images/novedades/WhatsApp_Image_2022-07-03_at_4.02.47_PM.jpeg" alt="electricista">
-                    </div>
-                    <div class="grilla__item item08">
-                        <img src="./images/novedades/WhatsApp_Image_2022-07-03_at_8.18.02_PM.jpeg" alt="microblading">
-                    </div>
-                    <div class="grilla__item item09">
-                        <img src="./images/novedades/WhatsApp_Image_2022-07-04_at_9.32.24_AM.jpeg" alt="peluqueria canina">
-                    </div>
-                    <div class="grilla__item item10">
-                        <img src="./images/novedades/WhatsApp_Image_2022-07-04_at_10.12.18_AM.jpeg" alt="maquina de pastas">
-                    </div>
-                    <div class="grilla__item item11">
-                        <img src="./images/novedades/WhatsApp_Image_2022-07-04_at_10.23.25_AM.jpeg" alt="haburguesas">
-                    </div>
-                    <div class="grilla__item item12">
-                        <img src="./images/novedades/WhatsApp_Image_2022-07-04_at_11.53.16_AM.jpeg" alt="departamento en venta">
-                    </div>
-                </div>
-                <div class="tablanovedades__fila fila03">
-                    <div class="grilla__item item13">
-                        <img src="./images/novedades/WhatsApp_Image_2022-07-02_at_10.36.19_AM.jpeg" alt="electricista">
-                    </div>
-                    <div class="grilla__item item14">
-                        <img src="./images/novedades/WhatsApp_Image_2022-07-02_at_10.53.24_AM.jpeg" alt="microblading">
-                    </div>
-                    <div class="grilla__item item15">
-                        <img src="./images/novedades/WhatsApp_Image_2022-07-02_at_12.07.59_PM.jpeg" alt="peluqueria canina">
-                    </div>
-                    <div class="grilla__item item16">
-                        <img src="./images/novedades/WhatsApp_Image_2022-07-02_at_12.11.05_PM.jpeg" alt="maquina de pastas">
-                    </div>
-                    <div class="grilla__item item17">
-                        <img src="./images/novedades/WhatsApp_Image_2022-07-02_at_12.11.56_PM.jpeg" alt="haburguesas">
-                    </div>
-                    <div class="grilla__item item18">
-                        <img src="./images/novedades/WhatsApp_Image_2022-07-02_at_12.38.50_PM.jpeg" alt="departamento en venta">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="bg-light text-center text-white footerpage layout__footer">
-        <!-- Grid container -->
-        <div class="container p-0 pb-0">
-            <!-- Section: Social media -->
-            <section class="mb-4">
-                <!-- Facebook -->
-                <a
-                class="btn btn-primary btn-floating m-1"
-                style="background-color: #3b5998;"
-                href="#!"
-                role="button"
-                ><i class="fab fa-facebook-f"></i
-                ></a>
-        
-                <!-- Twitter -->
-                <a
-                class="btn btn-primary btn-floating m-1"
-                style="background-color: #55acee;"
-                href="#!"
-                role="button"
-                ><i class="fab fa-twitter"></i
-                ></a>
-        
-                <!-- Google -->
-                <a
-                class="btn btn-primary btn-floating m-1"
-                style="background-color: #dd4b39;"
-                href="#!"
-                role="button"
-                ><i class="fab fa-google"></i
-                ></a>
-        
-                <!-- Instagram -->
-                <a
-                class="btn btn-primary btn-floating m-1"
-                style="background-color: #ac2bac;"
-                href="#!"
-                role="button"
-                ><i class="fab fa-instagram"></i
-                ></a>
-
-                <!-- Un cafecito -->
-                <a 
-                class="btn btn-primary btn-floating m-1" 
-                href='https://cafecito.app/compraentubarrio' 
-                rel='noopener' 
-                target='_blank'
-                role="button"
-                ><img srcset='https://cdn.cafecito.app/imgs/buttons/button_6.png 1x, 
-                https://cdn.cafecito.app/imgs/buttons/button_6_2x.png 2x, 
-                https://cdn.cafecito.app/imgs/buttons/button_6_3.75x.png 3.75x'
-                src='https://cdn.cafecito.app/imgs/buttons/button_6.png'
-                alt='Invitame un café en cafecito.app' />
-                </a>
-            </section>
-            <!-- Section: Social media -->
+  <header class="encabezado layout__header">
+    <nav class="displayNavMobile">
+      <div class="navbar">
+        <div class="container nav-container">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <div class="menu-items">
+            <li><a href="#">inicio</a></li>
+            <li><a href="./pages/map.html">mapa</a></li>
+            <li><a href="./pages/search.html">busqueda</a></li>
+            <li><a href="./pages/profile.html">cuenta</a></li>
+            <li><a href="./pages/who-we-are.html">nosotros</a></li>
+          </div>
         </div>
-        <!-- Grid container -->
-      
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2022 Copyright:
-          <a class="text-white" href="#!">CompraEnTuBarrio.com.ar</a>
+      </div>
+    </nav>
+    <nav class="nav__animacion displayNavDesktop principal">
+      <a href="#">inicio</a>
+      <a href="./pages/map.html">mapa</a>
+      <a href="./pages/search.html">busqueda</a>
+      <a href="./pages/profile.html">cuenta</a>
+      <a href="./pages/who-we-are.html">nosotros</a>
+      <div class="animation start-home"></div>
+    </nav>
+    <h1 class="encabezado__titulo">Compra en tu barrio<span class="displayOnOff"> a emprendedores vecinos</span></h1>
+  </header>
+  <main class="bodymain layout__main">
+    <section class="bodymain__buscar">
+      <div>
+        <input type="text" placeholder="Que estás buscando?" class="bodymain__buscar__input">
+      </div>
+      <div class="bodymain__buscar__position">
+        <img src="./images/icon-ubication-min.png" alt="icono de tu ubicación actual">
+        <label for="ubicacion">Tu ubicación actual es en la zona de...</label>
+      </div>
+    </section>
+    <section class="bodymain__novedades">
+      <h2>Las últimas novedades del barrio:</h2>
+      <div class="tablanovedades">
+        <div class="tablanovedades__fila fila01">
+          <div class="grilla__item item01">
+            <img src="./images/novedades/2022_07_02_promo_relax.jpeg" alt="promo relax">
+          </div>
+          <div class="grilla__item item02">
+            <img src="./images/novedades/2022-07-02_mocila_solidaria.jpeg" alt="mochila solidaria">
+          </div>
+          <div class="grilla__item item03">
+            <img src="./images/novedades/2022-07-02_campera_gear.jpeg" alt="campera gear">
+          </div>
+          <div class="grilla__item item04">
+            <img src="./images/novedades/2022-07-02_jadin_huellitas.jpeg" alt="jardin huellitas">
+          </div>
+          <div class="grilla__item item05">
+            <img src="./images/novedades/2022-07-03_torta_herlada.jpeg" alt="torta helada">
+          </div>
+          <div class="grilla__item item06">
+            <img src="./images/novedades/2022-07-03_pendulo_hebreo.jpeg" alt="pendulo hebreo">
+          </div>
         </div>
-        <!-- Copyright -->
+        <div class="tablanovedades__fila fila02">
+          <div class="grilla__item item07">
+            <img src="./images/novedades/2022-07-03_electricidad_quique.jpeg" alt="electricista Quique">
+          </div>
+          <div class="grilla__item item08">
+            <img src="./images/novedades/2022-07-03_microblading.jpeg" alt="microblading">
+          </div>
+          <div class="grilla__item item09">
+            <img src="./images/novedades/2022-07-04_peluqueria_canina.jpeg" alt="peluqueria canina">
+          </div>
+          <div class="grilla__item item10">
+            <img src="./images/novedades/2022-07-04_maquina_pastas.jpeg" alt="maquina de pastas">
+          </div>
+          <div class="grilla__item item11">
+            <img src="./images/novedades/2022-07-04_haburguesas_republica.jpeg" alt="haburguesas">
+          </div>
+          <div class="grilla__item item12">
+            <img src="./images/novedades/2022-07-04_departamento_venta.jpeg" alt="departamento en venta">
+          </div>
+        </div>
+        <div class="tablanovedades__fila fila03">
+          <div class="grilla__item item13">
+            <img src="./images/novedades/2022-07-02_republica_carne.jpeg" alt="República de la Carne">
+          </div>
+          <div class="grilla__item item14">
+            <img src="./images/novedades/2022-07-02_llamar_108.jpeg" alt="Gente en situación de calle, llamar al 108.">
+          </div>
+          <div class="grilla__item item15">
+            <img src="./images/novedades/2022-07-02_lifting_esculpidas.jpeg" alt="peluqueria y uñas">
+          </div>
+          <div class="grilla__item item16">
+            <img src="./images/novedades/2022-07-02_paseo_bateria.jpeg" alt="Paseo Batería Libertad">
+          </div>
+          <div class="grilla__item item17">
+            <img src="./images/novedades/2022-07-04_haburguesas_republica.jpeg" alt="haburguesas">
+          </div>
+          <div class="grilla__item item18">
+            <img src="./images/novedades/2022-07-04_departamento_venta.jpeg" alt="departamento en venta">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="container-footer layout__footer">
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white footerpage">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="caminito">
+          <!--Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">
+                Compra en tu Barrio
+              </h6>
+              <p>
+                Compra en tu barrio a emprendedores vecinos, somos un equipo de emprendedores
+                y vecinos que ofrecemos nuestros productos y servicios en nuestros barrios. 
+              </p>
+            </div>
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none" />
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Productos</h6>
+              <p>
+                <a class="text-white">Publicaciones</a>
+              </p>
+              <p>
+                <a class="text-white">Novedades</a>
+              </p>
+              <p>
+                <a class="text-white">Eventos</a>
+              </p>
+              <p>
+                <a class="text-white">Solidaridad</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none" />
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none" />
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+              <p><i class="fas fa-home mr-3"></i> Córdoba, CBA 5003, ARG</p>
+              <p><i class="fas fa-envelope mr-3"></i> info@comprabarrio.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 54 351 234 5668</p>
+              <p><i class="fas fa-print mr-3"></i> + 54 351 567 4589</p>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 footerpage-redes">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Siguenos en</h6>
+              <!-- Facebook -->
+              <span class="modificar-colores">
+                <a class="btn btn-primary btn-floating m-1 true-colors-final-f" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+              </span>
+              <!-- Twitter -->
+              <a class="btn btn-primary btn-floating m-1 true-colors-final-t" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+              <!-- Google -->
+              <a class="btn btn-primary btn-floating m-1 true-colors-final-g" href="#!" role="button"><i class="fab fa-google"></i></a>
+              <!-- Instagram -->
+              <a class="btn btn-primary btn-floating m-1 true-colors-final-i" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+              <!-- Linkedin -->
+              <a class="btn btn-primary btn-floating m-1 true-colors-final-l" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+              <!-- Github -->
+              <a class="btn btn-primary btn-floating m-1 true-colors-final-h" href="#!" role="button"><i class="fab fa-github"></i></a>
+                      <!-- Un cafecito -->
+
+            </div>
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+      <!-- Copyright -->
+      <div class="text-center p-3 copy-custom">
+        © 2022 Copyright:
+        <a class="text-white" href="https://domozoom.com.ar/">CompraEnTuBarrio.com</a>
+        <a class="btn btn-primary btn-floating m-1" href='https://cafecito.app/compraentubarrio' rel='noopener'
+        target='_blank' role="button"><img srcset='https://cdn.cafecito.app/imgs/buttons/button_6.png 1x, 
+              https://cdn.cafecito.app/imgs/buttons/button_6_2x.png 2x, 
+              https://cdn.cafecito.app/imgs/buttons/button_6_3.75x.png 3.75x'
+          src='https://cdn.cafecito.app/imgs/buttons/button_6.png' alt='Invitame un café en cafecito.app' />
+        </a>
+      </div>
+      <!-- Copyright -->
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-
+    <!-- Footer -->
+  </section>
+<!-- End of .container -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

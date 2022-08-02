@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* TODO: ver este tema, pro que debería estar en la general, si es que no lo estoy pisando con otra cosa */
 body {
     font-family: "Poppins", sans-serif;
 }
@@ -13,8 +12,7 @@ body {
 /* ENCABEZADO */
 
 .encabezado {
-    background-color: rgb(32, 90, 178);
-    background-image: url(../images/encabezado_50.jpg);
+    background-color: #929fba;
     position: sticky;
     top: 0px;
     height: calc(115px + 2vh);/* 15vh; */
@@ -43,7 +41,7 @@ body {
 
     &__titulo {
         margin: 0 auto;
-        background-color: rgba(255, 255, 255, .7);
+        background-color: rgba(255, 255, 255, .2);
         border-radius: 7px;
         width: fit-content;
         text-align: center;
@@ -75,9 +73,12 @@ body {
 
 /* FOOTER */
 
+.container-footer{
+  width: 100%;
+}
+
 .footerpage {
-    background-color: lightseagreen;
-    background-image: url(../images/encabezado_50.jpg);
+    background-color: #929fba;
     text-align: center;
 
     &__redes {
@@ -89,9 +90,24 @@ body {
     &__redes__item {
         display: inline-block;
         margin: 16px;
+
     }
 
 }
+
+.btn.true-colors-final-f {background-color: #3b5998;}
+
+.btn.true-colors-final-t {background-color: #55acee;}
+
+.btn.true-colors-final-g {background-color: #dd4b39;}
+
+.btn.true-colors-final-i {background-color: #ac2bac;}
+
+.btn.true-colors-final-l {background-color: #0082ca;}
+
+.btn.true-colors-final-h {background-color: #333333;}
+
+div.copy-custom {background-color: rgba(0, 0, 0, 0.2);}
 
 /* ---------------------------------- PAGINA UNDER CONSTRUCTION ----------------------------------------------*/
 
@@ -115,16 +131,3 @@ body {
     }
 }
 
-@media screen and (min-height: 900px) {
-
-
-    .encabezado{
-        background-image: url(../images/encabezado_short.jpg);
-    }
-
-    .footerpage{
-        background-image: url(../images/encabezado_short.jpg);
-    }
-
-
-}
